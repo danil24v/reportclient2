@@ -5,6 +5,7 @@
    "sleep_parse_sec":120,
    "sleep_send_sec":120,
    "printer_dir":"/Users/mac/Downloads/Printers",
+   "include_last_marker": true,
    "markers":[
       [
          ".*бщий\\s{1}сменный",
