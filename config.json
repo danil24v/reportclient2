@@ -1,0 +1,18 @@
+{
+   "get_ip":"https://itkit.com.ua/telbot/getip.php",
+   "default_ip":"127.0.0.1",
+   "restaurant_id":1883,
+   "sleep_parse_sec":120,
+   "sleep_send_sec":120,
+   "printer_dir":"/Users/mac/Downloads/Printers",
+   "markers":[
+      [
+         ".*бщий\\s{1}сменный",
+         ".*конец\\s{1}отчета"
+      ],
+      [
+         ".*аcход\\s{1}блюд\\s{1}по",
+         ".*конец\\s{1}отчета"
+      ]
+   ]
+}

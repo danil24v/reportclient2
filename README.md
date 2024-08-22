@@ -1,0 +1,7 @@
+- Папка deleted - хранит удаленные файлы принтера с отчетом (удаленный файл целяком) ;
+- Папка tosend - хранит отчеты на отправку (только сами отчеты, подготовленный к отправке)
+- Лог автоматом удаляется когда становится больше 20 МБ
+- config.json - JSON формат, для проверки правильности можно заюзать https://jsonformatter.curiousconcept.com/#
+- Собрать в exe:
+    - python -m pip install -U pyinstaller
+    - pyinstaller main.py --onefile

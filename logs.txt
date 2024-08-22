@@ -1,0 +1,67 @@
+2024-08-19 22:38:30,648 | INFO | --------------------
+2024-08-19 22:38:30,648 | INFO | Report Client v2 init...
+2024-08-19 22:38:30,648 | INFO | read_config() called
+2024-08-19 22:38:30,648 | INFO | read_config() finished. Loaded config {'get_ip': 'https://itkit.com.ua/telbot/getip.php', 'default_ip': '127.0.0.1', 'restaurant_id': 1883, 'sleep_parse_sec': 120, 'sleep_send_sec': 120, 'printer_dir': '/Users/mac/Downloads/Printers', 'markers': [['.*бщий\\s{1}сменный', '.*конец\\s{1}отчета'], ['.*аcход\\s{1}блюд\\s{1}по', '.*конец\\s{1}отчета']]}
+2024-08-19 22:38:30,883 | INFO | Will use received ip: 2.57.36.136
+2024-08-19 22:39:45,154 | INFO | --------------------
+2024-08-19 22:39:45,154 | INFO | Report Client v2 init...
+2024-08-19 22:39:45,154 | INFO | read_config() called
+2024-08-19 22:39:45,154 | INFO | read_config() finished. Loaded config {'get_ip': 'https://itkit.com.ua/telbot/getip.php', 'default_ip': '127.0.0.1', 'restaurant_id': 1883, 'sleep_parse_sec': 120, 'sleep_send_sec': 120, 'printer_dir': '/Users/mac/Downloads/Printers', 'markers': [['.*бщий\\s{1}сменный', '.*конец\\s{1}отчета'], ['.*аcход\\s{1}блюд\\s{1}по', '.*конец\\s{1}отчета']]}
+2024-08-19 22:39:45,364 | INFO | Will use received ip: 2.57.36.136
+2024-08-19 22:41:05,461 | INFO | --------------------
+2024-08-19 22:41:05,462 | INFO | Report Client v2 init...
+2024-08-19 22:41:05,462 | INFO | read_config() called
+2024-08-19 22:41:05,462 | INFO | read_config() finished. Loaded config {'get_ip': 'https://itkit.com.ua/telbot/getip.php', 'default_ip': '127.0.0.1', 'restaurant_id': 1883, 'sleep_parse_sec': 120, 'sleep_send_sec': 120, 'printer_dir': '/Users/mac/Downloads/Printers', 'markers': [['.*бщий\\s{1}сменный', '.*конец\\s{1}отчета'], ['.*аcход\\s{1}блюд\\s{1}по', '.*конец\\s{1}отчета']]}
+2024-08-19 22:41:05,673 | INFO | Will use received ip: 2.57.36.136
+2024-08-19 22:41:38,521 | INFO | --------------------
+2024-08-19 22:41:38,521 | INFO | Report Client v2 init...
+2024-08-19 22:41:38,521 | INFO | read_config() called
+2024-08-19 22:41:38,522 | INFO | read_config() finished. Loaded config {'get_ip': 'https://itkit.com.ua/telbot/getip.php', 'default_ip': '127.0.0.1', 'restaurant_id': 1883, 'sleep_parse_sec': 120, 'sleep_send_sec': 120, 'printer_dir': '/Users/mac/Downloads/Printers', 'markers': [['.*бщий\\s{1}сменный', '.*конец\\s{1}отчета'], ['.*аcход\\s{1}блюд\\s{1}по', '.*конец\\s{1}отчета']]}
+2024-08-19 22:41:38,732 | INFO | Will use received ip: 2.57.36.136
+2024-08-19 22:42:01,027 | INFO | --------------------
+2024-08-19 22:42:01,028 | INFO | Report Client v2 init...
+2024-08-19 22:42:01,028 | INFO | read_config() called
+2024-08-19 22:42:01,028 | INFO | read_config() finished. Loaded config {'get_ip': 'https://itkit.com.ua/telbot/getip.php', 'default_ip': '127.0.0.1', 'restaurant_id': 1883, 'sleep_parse_sec': 120, 'sleep_send_sec': 120, 'printer_dir': '/Users/mac/Downloads/Printers', 'markers': [['.*бщий\\s{1}сменный', '.*конец\\s{1}отчета'], ['.*аcход\\s{1}блюд\\s{1}по', '.*конец\\s{1}отчета']]}
+2024-08-19 22:42:01,255 | INFO | Will use received ip: 2.57.36.136
+2024-08-19 22:42:13,052 | INFO | --------------------
+2024-08-19 22:42:13,052 | INFO | Report Client v2 init...
+2024-08-19 22:42:13,052 | INFO | read_config() called
+2024-08-19 22:42:13,052 | INFO | read_config() finished. Loaded config {'get_ip': 'https://itkit.com.ua/telbot/getip.php', 'default_ip': '127.0.0.1', 'restaurant_id': 1883, 'sleep_parse_sec': 120, 'sleep_send_sec': 120, 'printer_dir': '/Users/mac/Downloads/Printers', 'markers': [['.*бщий\\s{1}сменный', '.*конец\\s{1}отчета'], ['.*аcход\\s{1}блюд\\s{1}по', '.*конец\\s{1}отчета']]}
+2024-08-19 22:42:13,274 | INFO | Will use received ip: 2.57.36.136
+2024-08-19 22:42:13,274 | INFO | Report Client v2 started :)
+2024-08-19 22:42:23,539 | INFO | --------------------
+2024-08-19 22:42:23,539 | INFO | Report Client v2 init...
+2024-08-19 22:42:23,539 | INFO | read_config() called
+2024-08-19 22:42:23,540 | INFO | read_config() finished. Loaded config {'get_ip': 'https://itkit.com.ua/telbot/getip.php', 'default_ip': '127.0.0.1', 'restaurant_id': 1883, 'sleep_parse_sec': 120, 'sleep_send_sec': 120, 'printer_dir': '/Users/mac/Downloads/Printers', 'markers': [['.*бщий\\s{1}сменный', '.*конец\\s{1}отчета'], ['.*аcход\\s{1}блюд\\s{1}по', '.*конец\\s{1}отчета']]}
+2024-08-19 22:42:23,771 | INFO | Will use received ip: 2.57.36.136
+2024-08-19 22:42:23,771 | INFO | Report Client v2 started :)
+2024-08-19 22:43:43,522 | INFO | --------------------
+2024-08-19 22:43:43,522 | INFO | Report Client v2 init...
+2024-08-19 22:43:43,522 | INFO | read_config() called
+2024-08-19 22:43:43,522 | INFO | read_config() finished. Loaded config {'get_ip': 'https://itkit.com.ua/telbot/getip.php', 'default_ip': '127.0.0.1', 'restaurant_id': 1883, 'sleep_parse_sec': 120, 'sleep_send_sec': 120, 'printer_dir': '/Users/mac/Downloads/Printers', 'markers': [['.*бщий\\s{1}сменный', '.*конец\\s{1}отчета'], ['.*аcход\\s{1}блюд\\s{1}по', '.*конец\\s{1}отчета']]}
+2024-08-19 22:43:43,730 | INFO | Will use received ip: 2.57.36.136
+2024-08-19 22:43:43,730 | INFO | Report Client v2 started :)
+2024-08-19 22:49:08,093 | INFO | --------------------
+2024-08-19 22:49:08,093 | INFO | Report Client v2 init...
+2024-08-19 22:49:08,093 | INFO | read_config() called
+2024-08-19 22:49:08,094 | INFO | read_config() finished. Loaded config {'get_ip': 'https://itkit.com.ua/telbot/getip.php', 'default_ip': '127.0.0.1', 'restaurant_id': 1883, 'sleep_parse_sec': 120, 'sleep_send_sec': 120, 'printer_dir': '/Users/mac/Downloads/Printers', 'markers': [['.*бщий\\s{1}сменный', '.*конец\\s{1}отчета'], ['.*аcход\\s{1}блюд\\s{1}по', '.*конец\\s{1}отчета']]}
+2024-08-19 22:49:08,308 | INFO | Will use received ip: 2.57.36.136
+2024-08-19 22:49:08,309 | INFO | Report Client v2 started :)
+2024-08-19 22:49:08,311 | INFO | Report saved to tosend/rep6619782.txt
+2024-08-19 22:49:08,311 | INFO | Will send following data to server:
+1883 [сменный/другие]
+ Блюдо 1 124
+
+Блюдо 1 124
+
+Блюдо 1 124
+
+Блюдо 1 124
+
+Блюдо 1 124
+2024-08-19 22:49:08,478 | INFO | Trying to send tosend/rep6619782.txt to 2.57.36.136
+2024-08-19 22:49:08,478 | INFO | ###############################
+2024-08-19 22:49:08,478 | INFO | Sending...
+2024-08-19 22:49:08,506 | INFO | Sent. Waiting for resp...
+2024-08-19 22:49:08,635 | INFO | Resp:b'OK\r\n'
+2024-08-19 22:49:08,636 | INFO | OK received :)
