@@ -95,6 +95,7 @@ def get_bot_server_ip(log_everything: bool = False) -> str:
 
 def get_report_by_markers(marker: list, lines: list) -> list:
     rep_lines = []
+    print(lines)
     mark_start = marker[0]
     mark_end = marker[1]
     if len(mark_end) == 0:
@@ -107,6 +108,8 @@ def get_report_by_markers(marker: list, lines: list) -> list:
             if re.match(mark_start, line):
                 print(f'Found START match in line:{line}')
                 rep_found = True
+            else:
+                print(f'do not match:"{line}"')
         else:
             if mark_end != '$fileend' and re.match(mark_end, line):
                 print(f'Found END match in line:{line}')
@@ -185,6 +188,7 @@ def check_for_reports_loop():
                 print(f'Reading file {file}')
                 with open(file, 'r') as f:
                     lines = f.readlines()
+                    #lines = data.split('\n')
                 for marker in config['markers']:
                     print('------------------------')
                     print(f'Current marker {marker}')
@@ -205,8 +209,9 @@ def check_for_reports_loop():
 def send_file_to_server(addr: str, fpath: str):
     logger.info('###############################')
     data_plain_text = None
-    with open(fpath, 'rb') as f:
-        data_plain_text = f.read()
+    with open(fpath, 'r') as f:
+        data = f.read()
+        data_plain_text = data.encode('utf8')
 
     resp = b'NONE'
     with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as clientsocket:
@@ -217,7 +222,7 @@ def send_file_to_server(addr: str, fpath: str):
         resp = clientsocket.recv(128)
         logger.info(f'Resp:{resp}')
 
-    resp_str = resp.decode("utf-8")
+    resp_str = resp.decode("utf8")
     if 'OK' in resp_str:
         logger.info('OK received :)')
         return True

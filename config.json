@@ -4,16 +4,16 @@
    "restaurant_id":1883,
    "sleep_parse_sec":120,
    "sleep_send_sec":120,
-   "printer_dir":"/Users/mac/Downloads/Printers",
+   "printer_dir":"C:/Danil/ReportClient2-2024/PrinterDir",
    "include_last_marker": true,
    "markers": [
       [
-         ".*бщий\\s{1}сменный",
+         ".*бщий\\s*сменный",
          ".*Всего:\\s{3,100}"
       ],
       [
-         ".*аcход\\s{1}блюд\\s{1}по",
-         ".*конец\\s{1}отчета"
+         "\\s*Расход*\\sблюд\\s*по\\s*категориям",
+         ".*Всего:\\s{3,100}"
       ]
    ]
 }
