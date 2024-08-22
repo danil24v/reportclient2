@@ -119,11 +119,10 @@ def get_report_by_markers(marker: list, lines: list) -> list:
     # print(f'Ret report:{rep_lines}')
     return rep_lines
 
-
-def prepare_rep_to_send(report_lines: list) -> str:
-    str_rep = '\n'.join([i for i in report_lines[0:]])
-    str_rep = str_rep.strip()
+def prepare_rep_to_send(rep_plain_text: str) -> str:
+    str_rep = rep_plain_text.strip()
     str_rep = str(config["restaurant_id"]) + ' [сменный/другие]\n' + str_rep
+    logger.info(f'Following data prepared for sending:\n{str_rep}')
     return str_rep
 
 
@@ -136,11 +135,36 @@ def copy_and_delete_original(fpath) -> str:
     return tmp_name
 
 
-def save_report_tosend_folder(tmp_name, rep_plain_tex: str):
-    path = os.path.join('tosend', tmp_name)
-    with open(path, 'w') as f:
-        f.write(rep_plain_tex)
-    logger.info(f'Report saved to {path}')
+def save_report_tosend_folder(tmp_name, rep_lines: list):
+    max_msg_size = 1900
+    rep_plain_text = '\n'.join([i for i in rep_lines[0:]])
+    if not len(rep_plain_text) > max_msg_size:
+        path = os.path.join('tosend', tmp_name)
+        rep_to_send = prepare_rep_to_send(rep_plain_text)
+        with open(path, 'w') as f:
+            f.write(rep_to_send)
+        logger.info(f'Report saved to {path}')
+    else:
+        messages = []
+        tmp_message_data = rep_plain_text
+        logger.info(f'Message to long, will be divided')
+        for i in range(10):
+            if len(tmp_message_data) > max_msg_size:
+                rep_part = tmp_message_data[0:max_msg_size]
+                rep_part = f'[часть {i+1}]\n{rep_part}'
+                tmp_message_data = tmp_message_data[max_msg_size:]
+                messages.append(rep_part)
+            else:
+                rep_part = tmp_message_data[0:]
+                rep_part = f'[часть {i + 1}]\n{rep_part}'
+                messages.append(rep_part)
+                break
+        for i in range(len(messages)):
+            path = os.path.join('tosend', f'{i}-{tmp_name}')
+            rep_to_send = prepare_rep_to_send(messages[i])
+            with open(path, 'w') as f:
+                f.write(rep_to_send)
+            logger.info(f'Report part {i} saved to {path}')
 
 
 def check_for_reports_loop():
@@ -166,10 +190,8 @@ def check_for_reports_loop():
                     print(f'Current marker {marker}')
                     report_lines = get_report_by_markers(marker, lines)
                     if len(report_lines) > 0:
-                        rep_text = prepare_rep_to_send(report_lines)
                         tmp_name = copy_and_delete_original(file)
-                        save_report_tosend_folder(tmp_name, rep_text)
-                        logger.info(f'Will send following data to server:\n{rep_text}')
+                        save_report_tosend_folder(tmp_name, report_lines)
                     else:
                         print('Report not found')
 
@@ -212,7 +234,7 @@ def send_reports_loop():
             cleanup_logs_if_need()
 
             addr_to_send = get_bot_server_ip()
-            for file in os.listdir(tosend_dir):
+            for file in sorted(os.listdir(tosend_dir)):
                 fpath = os.path.join(tosend_dir, file)
                 if not os.path.isdir(fpath) and file != ".DS_Store":
                     logger.info(f'Trying to send {fpath} to {addr_to_send}')

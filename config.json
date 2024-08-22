@@ -6,10 +6,10 @@
    "sleep_send_sec":120,
    "printer_dir":"/Users/mac/Downloads/Printers",
    "include_last_marker": true,
-   "markers":[
+   "markers": [
       [
          ".*бщий\\s{1}сменный",
-         ".*конец\\s{1}отчета"
+         ".*Всего:\\s{3,100}"
       ],
       [
          ".*аcход\\s{1}блюд\\s{1}по",
