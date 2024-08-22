@@ -2,6 +2,8 @@
 - Папка tosend - хранит отчеты на отправку (только сами отчеты, подготовленный к отправке)
 - Лог автоматом удаляется когда становится больше 20 МБ
 - config.json - JSON формат, для проверки правильности можно заюзать https://jsonformatter.curiousconcept.com/#
+- Обязательно установить библиотеку requests для Python:
+  - python -m pip install requests
 - Собрать в exe:
     - python -m pip install -U pyinstaller
     - pyinstaller main.py --onefile
