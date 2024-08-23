@@ -3,7 +3,7 @@
    "default_ip":"127.0.0.1",
    "restaurant_id":1883,
    "sleep_parse_sec":120,
-   "sleep_send_sec":120,
+   "sleep_send_sec":10,
    "printer_dir":"C:/Danil/ReportClient2-2024/PrinterDir",
    "include_last_marker": true,
    "markers": [
