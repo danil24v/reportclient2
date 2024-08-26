@@ -5,7 +5,7 @@
    "sleep_parse_sec":120,
    "sleep_send_sec":10,
    "printer_dir":"C:/Danil/ReportClient2-2024/PrinterDir",
-   "include_last_marker": true,
+   "include_markers": true,
    "markers": [
       [
          ".*бщий\\s*сменный",

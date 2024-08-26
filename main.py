@@ -107,6 +107,8 @@ def get_report_by_markers(marker: list, lines: list) -> list:
         line = line.replace('\n', '')
         if not rep_found:
             if re.match(mark_start, line):
+                if config['include_markers'] == True:
+                    rep_lines.append(line)
                 print(f'Found START match in line:{line}')
                 rep_found = True
             else:
@@ -114,7 +116,7 @@ def get_report_by_markers(marker: list, lines: list) -> list:
         else:
             if mark_end != '$fileend' and re.match(mark_end, line):
                 print(f'Found END match in line:{line}')
-                if config['include_last_marker'] == True:
+                if config['include_markers'] == True:
                     rep_lines.append(line)
                 break
 
