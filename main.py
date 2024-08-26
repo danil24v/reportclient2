@@ -104,6 +104,7 @@ def get_report_by_markers(marker: list, lines: list) -> list:
     print(f'Marker start:{mark_start}; Marker end:{mark_end};')
     rep_found = False
     for line in lines:
+        line = line.replace('\n', '')
         if not rep_found:
             if re.match(mark_start, line):
                 print(f'Found START match in line:{line}')
@@ -129,13 +130,11 @@ def prepare_rep_to_send(rep_plain_text: str) -> str:
     return str_rep
 
 
-def copy_and_delete_original(fpath) -> str:
+def copy_and_delete_original(tmp_name, fpath) -> str:
     print(f'copy_and_delete_original() called:{fpath}')
-    tmp_name = f'rep{random.randint(0, 9999999)}.txt'
     path_orig_copy = os.path.join('deleted', tmp_name)
     open(path_orig_copy, 'wb').write(open(fpath, 'rb').read())  # Copy
     os.remove(fpath)
-    return tmp_name
 
 
 def save_report_tosend_folder(tmp_name, rep_lines: list):
@@ -169,6 +168,12 @@ def save_report_tosend_folder(tmp_name, rep_lines: list):
                 f.write(rep_to_send)
             logger.info(f'Report part {i} saved to {path}')
 
+def get_letter(pos: int):
+    letters = 'abcdefghlmn'
+    ret = ''
+    for let in list(str(pos)):
+        ret += letters[int(let):int(let)+1]
+    return ret
 
 def check_for_reports_loop():
     while True:
@@ -184,20 +189,28 @@ def check_for_reports_loop():
             print(f'Files to check:{files}')
 
             for file in files:
+                report_found = False
                 lines = None
+                tmp_name = f'rep{random.randint(0, 9999999)}.txt'
                 print(f'Reading file {file}')
                 with open(file, 'r') as f:
                     lines = f.readlines()
                     #lines = data.split('\n')
+                i = 0
                 for marker in config['markers']:
                     print('------------------------')
                     print(f'Current marker {marker}')
                     report_lines = get_report_by_markers(marker, lines)
                     if len(report_lines) > 0:
-                        tmp_name = copy_and_delete_original(file)
-                        save_report_tosend_folder(tmp_name, report_lines)
+                        report_found = True
+                        tmp_name_rep = get_letter(i) + '-' + tmp_name
+                        save_report_tosend_folder(tmp_name_rep, report_lines)
                     else:
                         print('Report not found')
+                    i += 1
+                if report_found:
+                    logger.info(f'Report(s) found in {file}, will copy it to {tmp_name} and delete.')
+                    copy_and_delete_original(tmp_name, file)
 
         except Exception as e:
             logger.error(f'check_for_reports_loop() error: {e} {traceback.format_exc()}')

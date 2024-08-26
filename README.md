@@ -4,6 +4,7 @@
 - config.json - JSON формат, для проверки правильности можно заюзать https://jsonformatter.curiousconcept.com/#
 - Проверить, что-бы у config.json была читаемая кодировка в зависимости от OS
 - consfig_example.json - только описание конфига, программа будет использовать config.json
+- Кодировка всех файлов должна быть cp1251 (windows1251), в том числе и config файла
 - Порядок установки:
 ```bash
 python -m pip install requests
