@@ -1,17 +1,19 @@
 {
    "get_ip":"https://itkit.com.ua/telbot/getip.php",
-   "default_ip":"127.0.0.1",
+   "default_ip":"2.57.36.136",
    "restaurant_id":1883,
    "sleep_parse_sec":120,
    "sleep_send_sec":10,
-   "printer_dir":"C:/Danil/ReportClient2-2024/PrinterDir",
+   "printer_dir":"/Users/mac/Downloads/Printers",
    "include_markers": true,
    "markers": [
       [
+         "сменный отчет",
          ".*бщий\\s*сменный",
-         ".*Всего:\\s{3,100}"
+         "\\s*[+-]?([0-9]*[.])?[0-9]+"
       ],
       [
+         "расход блюд",
          "\\s*Расход*\\sблюд\\s*по\\s*категориям",
          ".*Всего:\\s{3,100}"
       ]

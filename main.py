@@ -10,6 +10,7 @@ import traceback
 import re
 import socket
 
+
 CONFIG_FILE = "config.json"
 SERVER_PORT = 44515
 LOGS_FILE = "logs.txt"
@@ -33,6 +34,7 @@ logger.addHandler(stdout_handler)
 
 def read_config() -> dict:
     logger.info(f'read_config() called')
+
     ret_dict = {}
     lines = ""
     with open(CONFIG_FILE, 'r') as f:
@@ -96,25 +98,27 @@ def get_bot_server_ip(log_everything: bool = False) -> str:
 def get_report_by_markers(marker: list, lines: list) -> list:
     rep_lines = []
     print(lines)
-    mark_start = marker[0]
-    mark_end = marker[1]
+    mark_name = marker[0]
+    mark_start = marker[1]
+    mark_end = marker[2]
     if len(mark_end) == 0:
-        mark_end = "$fileend"
+        mark_end = "$default"
 
     print(f'Marker start:{mark_start}; Marker end:{mark_end};')
     rep_found = False
     for line in lines:
         line = line.replace('\n', '')
-        if not rep_found:
+        if not rep_found:   # Если не наткнулись на начало отчета
             if re.match(mark_start, line):
+                rep_lines.append(f'[отчет: {mark_name}]')
                 if config['include_markers'] == True:
                     rep_lines.append(line)
                 print(f'Found START match in line:{line}')
                 rep_found = True
             else:
                 print(f'do not match:"{line}"')
-        else:
-            if mark_end != '$fileend' and re.match(mark_end, line):
+        else:   # Если уже читаем отчет
+            if mark_end != '$default' and re.match(mark_end, line):
                 print(f'Found END match in line:{line}')
                 if config['include_markers'] == True:
                     rep_lines.append(line)
@@ -164,7 +168,8 @@ def save_report_tosend_folder(tmp_name, rep_lines: list):
                 messages.append(rep_part)
                 break
         for i in range(len(messages)):
-            path = os.path.join('tosend', f'{i}-{tmp_name}')
+            new_name = tmp_name.split('-')[0] + '-' + str(i) + '-' + tmp_name.split('-')[1]
+            path = os.path.join('tosend', new_name)
             rep_to_send = prepare_rep_to_send(messages[i])
             with open(path, 'w') as f:
                 f.write(rep_to_send)
