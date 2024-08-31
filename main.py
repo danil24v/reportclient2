@@ -147,7 +147,7 @@ def save_report_tosend_folder(tmp_name, rep_lines: list):
     max_msg_size = 1900
     rep_plain_text = '\n'.join([i for i in rep_lines[0:]])
     if not len(rep_plain_text) > max_msg_size:
-        path = os.path.join('tosend', tmp_name)
+        path = os.path.join('tosend', f'{tmp_name}.txt')
         rep_to_send = prepare_rep_to_send(rep_plain_text)
         with open(path, 'w') as f:
             f.write(rep_to_send)
@@ -168,8 +168,7 @@ def save_report_tosend_folder(tmp_name, rep_lines: list):
                 messages.append(rep_part)
                 break
         for i in range(len(messages)):
-            new_name = tmp_name.split('-')[0] + '-' + str(i) + '-' + tmp_name.split('-')[1]
-            path = os.path.join('tosend', new_name)
+            path = os.path.join('tosend', f'{tmp_name}-{i}.txt')
             rep_to_send = prepare_rep_to_send(messages[i])
             with open(path, 'w') as f:
                 f.write(rep_to_send)
@@ -198,7 +197,7 @@ def check_for_reports_loop():
             for file in files:
                 report_found = False
                 lines = None
-                tmp_name = f'rep{random.randint(0, 9999999)}.txt'
+                tmp_name = f'rep{random.randint(0, 9999999)}'
                 print(f'Reading file {file}')
                 with open(file, 'r') as f:
                     lines = f.readlines()
@@ -210,7 +209,7 @@ def check_for_reports_loop():
                     report_lines = get_report_by_markers(marker, lines)
                     if len(report_lines) > 0:
                         report_found = True
-                        tmp_name_rep = get_letter(i) + '-' + tmp_name
+                        tmp_name_rep = tmp_name + '-' + get_letter(i)
                         save_report_tosend_folder(tmp_name_rep, report_lines)
                     else:
                         print('Report not found')
