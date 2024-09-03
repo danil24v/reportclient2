@@ -1,5 +1,3 @@
-import base64
-import datetime
 import os
 import random
 import requests
@@ -10,13 +8,13 @@ import threading
 import time
 import traceback
 import re
+import socket
 
 
 CONFIG_FILE = "config.json"
+SERVER_PORT = 44515
 LOGS_FILE = "logs.txt"
 LOGS_MAX_SIZE_MB = 20
-REST_ID_LEN = 8
-REP_TITLE_LEN = 25
 
 logger = logging.getLogger()
 logger.setLevel(logging.INFO)
@@ -73,28 +71,28 @@ def check_dirs_files():
             os.makedirs(dir)
 
 
-def get_bot_server_addr(log_everything: bool = False) -> str:
+def get_bot_server_ip(log_everything: bool = False) -> str:
     global config
-    get_addr_addr = config['get_addr']
-    def_addr_addr = config['default_addr']
+    get_ip_addr = config['get_ip']
+    def_ip_addr = config['default_ip']
     headers = {
         'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/39.0.2171.95 Safari/537.36'}
     try:
-        resp = requests.get(get_addr_addr, headers=headers)
-        recv_addr = resp.text.strip()
-        if (len(recv_addr.split('\n')) > 1 or len(recv_addr.split('.')) != 4):
-            raise Exception(f'{recv_addr} is not an ip or domain addr.')
+        resp = requests.get(get_ip_addr, headers=headers)
+        recv_ip = resp.text.strip()
+        if (len(recv_ip.split('\n')) > 1 or len(recv_ip.split('.')) != 4):
+            raise Exception(f'{recv_ip} is not an ip or domain addr.')
         if log_everything:
-            logger.info(f'Will use received ip: {recv_addr}')
-        return recv_addr
+            logger.info(f'Will use received ip: {recv_ip}')
+        return recv_ip
     except Exception as e1:
-        err = f'get_bot_server_addr() error while connecting to {get_addr_addr}: {e1}'
+        err = f'get_bot_server_ip() error while connecting to {get_ip_addr}: {e1}'
         print(err)
         if log_everything:
             logger.error(err)
             logger.error(traceback.format_exc())
-            logger.info(f'Will use default_addr: {def_addr_addr}')
-        return def_addr_addr
+            logger.info(f'Will use default_ip: {def_ip_addr}')
+        return def_ip_addr
 
 
 def get_report_by_markers(marker: list, lines: list) -> list:
@@ -112,8 +110,7 @@ def get_report_by_markers(marker: list, lines: list) -> list:
         line = line.replace('\n', '')
         if not rep_found:   # Если не наткнулись на начало отчета
             if re.match(mark_start, line):
-                rep_name_line = mark_name
-                rep_lines.append(rep_name_line)
+                rep_lines.append(f'[отчет: {mark_name}]')
                 if config['include_markers'] == True:
                     rep_lines.append(line)
                 print(f'Found START match in line:{line}')
@@ -132,6 +129,12 @@ def get_report_by_markers(marker: list, lines: list) -> list:
     # print(f'Ret report:{rep_lines}')
     return rep_lines
 
+def prepare_rep_to_send(rep_plain_text: str) -> str:
+    str_rep = rep_plain_text.strip()
+    str_rep = str(config["restaurant_id"]) + ' [сменный/другие]\n' + str_rep
+    logger.info(f'Following data prepared for sending:\n{str_rep}')
+    return str_rep
+
 
 def copy_and_delete_original(tmp_name, fpath) -> str:
     print(f'copy_and_delete_original() called:{fpath}')
@@ -141,11 +144,35 @@ def copy_and_delete_original(tmp_name, fpath) -> str:
 
 
 def save_report_tosend_folder(tmp_name, rep_lines: list):
+    max_msg_size = 1900
     rep_plain_text = '\n'.join([i for i in rep_lines[0:]])
-    path = os.path.join('tosend', f'{tmp_name}.txt')
-    logger.info(f'Following data prepared for sending:\n{rep_plain_text}')
-    with open(path, 'w') as f:
-        f.write(rep_plain_text)
+    if not len(rep_plain_text) > max_msg_size:
+        path = os.path.join('tosend', f'{tmp_name}.txt')
+        rep_to_send = prepare_rep_to_send(rep_plain_text)
+        with open(path, 'w') as f:
+            f.write(rep_to_send)
+        logger.info(f'Report saved to {path}')
+    else:
+        messages = []
+        tmp_message_data = rep_plain_text
+        logger.info(f'Message to long, will be divided')
+        for i in range(10):
+            if len(tmp_message_data) > max_msg_size:
+                rep_part = tmp_message_data[0:max_msg_size]
+                rep_part = f'[часть {i+1}]\n{rep_part}'
+                tmp_message_data = tmp_message_data[max_msg_size:]
+                messages.append(rep_part)
+            else:
+                rep_part = tmp_message_data[0:]
+                rep_part = f'[часть {i + 1}]\n{rep_part}'
+                messages.append(rep_part)
+                break
+        for i in range(len(messages)):
+            path = os.path.join('tosend', f'{tmp_name}-{i}.txt')
+            rep_to_send = prepare_rep_to_send(messages[i])
+            with open(path, 'w') as f:
+                f.write(rep_to_send)
+            logger.info(f'Report part {i} saved to {path}')
 
 def get_letter(pos: int):
     letters = 'abcdefghlmn'
@@ -197,35 +224,29 @@ def check_for_reports_loop():
         print(f'check_for_reports_loop sleep {config["sleep_parse_sec"]} sec.')
         time.sleep(config["sleep_parse_sec"])
 
-def encode_key(str):
-    string_bytes = str.encode("ascii")
-    base64_bytes = base64.b64encode(string_bytes)
-    base64_string = base64_bytes.decode("ascii")
-    return base64_string
-
 
 def send_file_to_server(addr: str, fpath: str):
     logger.info('###############################')
     data_plain_text = None
     with open(fpath, 'r') as f:
         data = f.read()
+        data_plain_text = data.encode('utf8')
 
-    nl_pos = data.find('\n')
-    rep_title = data[0:nl_pos]
-    rep_data = data[data.find('\n'):]
-    json_data = {
-        "rest_id": config["restaurant_id"],
-        "rep_title": rep_title,
-        "rep_text": rep_data
-    }
-    resp = requests.post(addr + '/send_rep', json = json_data)
-    resp_text = resp.text.strip()
-    logger.info(f'Resp:{resp_text}')
-    if resp.ok:
+    resp = b'NONE'
+    with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as clientsocket:
+        logger.info('Sending...')
+        clientsocket.connect((addr, SERVER_PORT))
+        clientsocket.send(data_plain_text)
+        logger.info('Sent. Waiting for resp...')
+        resp = clientsocket.recv(128)
+        logger.info(f'Resp:{resp}')
+
+    resp_str = resp.decode("utf8")
+    if 'OK' in resp_str:
         logger.info('OK received :)')
         return True
 
-    logger.info(f'Bad response:{resp_text}')
+    logger.info(f'Bad response:{resp_str}')
     return False
 
 
@@ -236,7 +257,7 @@ def send_reports_loop():
         try:
             cleanup_logs_if_need()
 
-            addr_to_send = get_bot_server_addr()
+            addr_to_send = get_bot_server_ip()
             for file in sorted(os.listdir(tosend_dir)):
                 fpath = os.path.join(tosend_dir, file)
                 if not os.path.isdir(fpath) and file != ".DS_Store":
@@ -262,7 +283,7 @@ if __name__ == '__main__':
     check_dirs_files()
     global config
     config = read_config()
-    get_bot_server_addr(log_everything=True)
+    get_bot_server_ip(log_everything=True)
     thread = threading.Thread(target=check_for_reports_loop)
     thread2 = threading.Thread(target=send_reports_loop)
     logger.info('Report Client v2 started :)')

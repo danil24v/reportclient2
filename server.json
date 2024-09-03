@@ -1,0 +1,16 @@
+{
+   "port":  44516,
+   "bot_token": "7511480796:AAEeKgmNyoqpxL8ulxo7HAcsbYuoWNF-o0s",
+   "restaurants": [
+      {
+         "rest_name": "Beerhouse",
+         "rest_id": "00001902",
+         "rest_pass": "kurwabobr"
+      },
+      {
+         "rest_name": "Beerhouse2",
+         "rest_id": "00001803",
+         "rest_pass": "passabcd"
+      }
+   ]
+}

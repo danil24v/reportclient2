@@ -1,0 +1,294 @@
+2024-09-01 13:22:19,895 | INFO | read_config() called
+2024-09-01 13:22:19,896 | INFO | read_config() finished. Loaded config {'port': 44516, 'bot_token': '7511480796:AAEeKgmNyoqpxL8ulxo7HAcsbYuoWNF-o0s', 'restaurants': [{'rest_name': 'Beerhouse', 'rest_id': '00001902', 'rest_pass': 'kurwabobr'}, {'rest_name': 'Beerhouse2', 'rest_id': '00001803', 'rest_pass': 'passabcd'}]}
+2024-09-01 13:22:19,896 | INFO | --------------------
+2024-09-01 13:22:19,896 | INFO | Report Server v2 init...
+2024-09-01 13:22:19,896 | INFO | read_db() finished. Loaded DB_FILE {'335678020': {'name': 'danil24v', 'rest_id': '00001902', 'rest_name': 'Beerhouse'}}
+2024-09-01 13:22:26,460 | INFO | read_config() called
+2024-09-01 13:22:26,460 | INFO | read_config() finished. Loaded config {'port': 44516, 'bot_token': '7511480796:AAEeKgmNyoqpxL8ulxo7HAcsbYuoWNF-o0s', 'restaurants': [{'rest_name': 'Beerhouse', 'rest_id': '00001902', 'rest_pass': 'kurwabobr'}, {'rest_name': 'Beerhouse2', 'rest_id': '00001803', 'rest_pass': 'passabcd'}]}
+2024-09-01 13:22:26,460 | INFO | --------------------
+2024-09-01 13:22:26,460 | INFO | Report Server v2 init...
+2024-09-01 13:22:26,460 | INFO | read_db() finished. Loaded DB_FILE {'335678020': {'name': 'danil24v', 'rest_id': '00001902', 'rest_name': 'Beerhouse'}}
+2024-09-01 13:22:26,610 | INFO | [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:44516
+ * Running on http://172.20.10.2:44516
+2024-09-01 13:22:26,610 | INFO | [33mPress CTRL+C to quit[0m
+2024-09-01 13:22:46,634 | ERROR | Infinity polling: polling exited
+2024-09-01 13:22:46,635 | ERROR | Break infinity polling
+2024-09-01 13:22:46,635 | INFO | Ready :)
+2024-09-01 13:23:13,626 | INFO | read_config() called
+2024-09-01 13:23:13,627 | INFO | read_config() finished. Loaded config {'port': 44516, 'bot_token': '7511480796:AAEeKgmNyoqpxL8ulxo7HAcsbYuoWNF-o0s', 'restaurants': [{'rest_name': 'Beerhouse', 'rest_id': '00001902', 'rest_pass': 'kurwabobr'}, {'rest_name': 'Beerhouse2', 'rest_id': '00001803', 'rest_pass': 'passabcd'}]}
+2024-09-01 13:23:13,627 | INFO | --------------------
+2024-09-01 13:23:13,627 | INFO | Report Server v2 init...
+2024-09-01 13:23:13,627 | INFO | read_db() finished. Loaded DB_FILE {'335678020': {'name': 'danil24v', 'rest_id': '00001902', 'rest_name': 'Beerhouse'}}
+2024-09-01 13:23:13,632 | INFO | [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:44516
+ * Running on http://172.20.10.2:44516
+2024-09-01 13:23:13,632 | INFO | [33mPress CTRL+C to quit[0m
+2024-09-01 13:23:24,926 | INFO | read_config() called
+2024-09-01 13:23:24,927 | INFO | read_config() finished. Loaded config {'port': 44516, 'bot_token': '7511480796:AAEeKgmNyoqpxL8ulxo7HAcsbYuoWNF-o0s', 'restaurants': [{'rest_name': 'Beerhouse', 'rest_id': '00001902', 'rest_pass': 'kurwabobr'}, {'rest_name': 'Beerhouse2', 'rest_id': '00001803', 'rest_pass': 'passabcd'}]}
+2024-09-01 13:23:24,927 | INFO | --------------------
+2024-09-01 13:23:24,927 | INFO | Report Server v2 init...
+2024-09-01 13:23:24,928 | INFO | read_db() finished. Loaded DB_FILE {'335678020': {'name': 'danil24v', 'rest_id': '00001902', 'rest_name': 'Beerhouse'}}
+2024-09-01 13:23:24,944 | INFO | [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:44516
+ * Running on http://172.20.10.2:44516
+2024-09-01 13:23:24,944 | INFO | [33mPress CTRL+C to quit[0m
+2024-09-01 13:23:42,431 | INFO | read_config() called
+2024-09-01 13:23:42,432 | INFO | read_config() finished. Loaded config {'port': 44516, 'bot_token': '7511480796:AAEeKgmNyoqpxL8ulxo7HAcsbYuoWNF-o0s', 'restaurants': [{'rest_name': 'Beerhouse', 'rest_id': '00001902', 'rest_pass': 'kurwabobr'}, {'rest_name': 'Beerhouse2', 'rest_id': '00001803', 'rest_pass': 'passabcd'}]}
+2024-09-01 13:23:42,432 | INFO | --------------------
+2024-09-01 13:23:42,432 | INFO | Report Server v2 init...
+2024-09-01 13:23:42,432 | INFO | read_db() finished. Loaded DB_FILE {'335678020': {'name': 'danil24v', 'rest_id': '00001902', 'rest_name': 'Beerhouse'}}
+2024-09-01 13:23:42,440 | INFO | [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:44516
+ * Running on http://172.20.10.2:44516
+2024-09-01 13:23:42,440 | INFO | [33mPress CTRL+C to quit[0m
+2024-09-01 13:23:58,296 | ERROR | Infinity polling exception: HTTPSConnectionPool(host='api.telegram.org', port=443): Read timed out. (read timeout=15)
+2024-09-01 13:23:58,296 | ERROR | Exception traceback:
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/urllib3/connectionpool.py", line 386, in _make_request
+    self._validate_conn(conn)
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/urllib3/connectionpool.py", line 1040, in _validate_conn
+    conn.connect()
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/urllib3/connection.py", line 414, in connect
+    self.sock = ssl_wrap_socket(
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/urllib3/util/ssl_.py", line 449, in ssl_wrap_socket
+    ssl_sock = _ssl_wrap_socket_impl(
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/urllib3/util/ssl_.py", line 493, in _ssl_wrap_socket_impl
+    return ssl_context.wrap_socket(sock, server_hostname=server_hostname)
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/ssl.py", line 501, in wrap_socket
+    return self.sslsocket_class._create(
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/ssl.py", line 1041, in _create
+    self.do_handshake()
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/ssl.py", line 1310, in do_handshake
+    self._sslobj.do_handshake()
+socket.timeout: _ssl.c:1112: The handshake operation timed out
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/requests/adapters.py", line 489, in send
+    resp = conn.urlopen(
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/urllib3/connectionpool.py", line 785, in urlopen
+    retries = retries.increment(
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/urllib3/util/retry.py", line 550, in increment
+    raise six.reraise(type(error), error, _stacktrace)
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/urllib3/packages/six.py", line 770, in reraise
+    raise value
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/urllib3/connectionpool.py", line 703, in urlopen
+    httplib_response = self._make_request(
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/urllib3/connectionpool.py", line 389, in _make_request
+    self._raise_timeout(err=e, url=url, timeout_value=conn.timeout)
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/urllib3/connectionpool.py", line 340, in _raise_timeout
+    raise ReadTimeoutError(
+urllib3.exceptions.ReadTimeoutError: HTTPSConnectionPool(host='api.telegram.org', port=443): Read timed out. (read timeout=15)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/telebot/__init__.py", line 1101, in infinity_polling
+    self.polling(non_stop=True, timeout=timeout, long_polling_timeout=long_polling_timeout,
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/telebot/__init__.py", line 1189, in polling
+    self.__threaded_polling(non_stop=non_stop, interval=interval, timeout=timeout, long_polling_timeout=long_polling_timeout,
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/telebot/__init__.py", line 1264, in __threaded_polling
+    raise e
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/telebot/__init__.py", line 1226, in __threaded_polling
+    self.worker_pool.raise_exceptions()
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/telebot/util.py", line 150, in raise_exceptions
+    raise self.exception_info
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/telebot/util.py", line 93, in run
+    task(*args, **kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/telebot/__init__.py", line 8822, in _run_middlewares_and_handler
+    result = handler['function'](message)
+  File "/Users/mac/Documents/Progamming/Python/ReportClient2/server.py", line 185, in get_text_message
+    bot.send_message(message.from_user.id, resp)
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/telebot/__init__.py", line 1766, in send_message
+    apihelper.send_message(
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/telebot/apihelper.py", line 273, in send_message
+    return _make_request(token, method_url, params=payload, method='post')
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/telebot/apihelper.py", line 162, in _make_request
+    result = _get_req_session().request(
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/requests/sessions.py", line 587, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/requests/sessions.py", line 701, in send
+    r = adapter.send(request, **kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/requests/adapters.py", line 578, in send
+    raise ReadTimeout(e, request=request)
+requests.exceptions.ReadTimeout: HTTPSConnectionPool(host='api.telegram.org', port=443): Read timed out. (read timeout=15)
+
+2024-09-01 13:24:08,981 | ERROR | Infinity polling: polling exited
+2024-09-01 13:24:08,982 | ERROR | Break infinity polling
+2024-09-01 13:24:08,982 | INFO | Ready :)
+2024-09-01 13:24:11,364 | INFO | read_config() called
+2024-09-01 13:24:11,365 | INFO | read_config() finished. Loaded config {'port': 44516, 'bot_token': '7511480796:AAEeKgmNyoqpxL8ulxo7HAcsbYuoWNF-o0s', 'restaurants': [{'rest_name': 'Beerhouse', 'rest_id': '00001902', 'rest_pass': 'kurwabobr'}, {'rest_name': 'Beerhouse2', 'rest_id': '00001803', 'rest_pass': 'passabcd'}]}
+2024-09-01 13:24:11,365 | INFO | --------------------
+2024-09-01 13:24:11,365 | INFO | Report Server v2 init...
+2024-09-01 13:24:11,365 | INFO | read_db() finished. Loaded DB_FILE {'335678020': {'name': 'danil24v', 'rest_id': '00001902', 'rest_name': 'Beerhouse'}}
+2024-09-01 13:24:11,374 | INFO | [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:44516
+ * Running on http://172.20.10.2:44516
+2024-09-01 13:24:11,374 | INFO | [33mPress CTRL+C to quit[0m
+2024-09-01 13:24:14,355 | ERROR | Infinity polling exception: 335678020
+2024-09-01 13:24:14,359 | ERROR | Exception traceback:
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/telebot/__init__.py", line 1101, in infinity_polling
+    self.polling(non_stop=True, timeout=timeout, long_polling_timeout=long_polling_timeout,
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/telebot/__init__.py", line 1189, in polling
+    self.__threaded_polling(non_stop=non_stop, interval=interval, timeout=timeout, long_polling_timeout=long_polling_timeout,
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/telebot/__init__.py", line 1264, in __threaded_polling
+    raise e
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/telebot/__init__.py", line 1226, in __threaded_polling
+    self.worker_pool.raise_exceptions()
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/telebot/util.py", line 150, in raise_exceptions
+    raise self.exception_info
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/telebot/util.py", line 93, in run
+    task(*args, **kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/telebot/__init__.py", line 8822, in _run_middlewares_and_handler
+    result = handler['function'](message)
+  File "/Users/mac/Documents/Progamming/Python/ReportClient2/server.py", line 181, in get_text_message
+    resp = get_current_user_state(chat_id=message.from_user.id)
+  File "/Users/mac/Documents/Progamming/Python/ReportClient2/server.py", line 160, in get_current_user_state
+    rest_id = db[chat_id]['rest_id']
+KeyError: 335678020
+
+2024-09-01 13:24:41,744 | ERROR | Infinity polling: polling exited
+2024-09-01 13:24:41,745 | ERROR | Break infinity polling
+2024-09-01 13:24:41,745 | INFO | Ready :)
+2024-09-01 13:24:43,898 | INFO | read_config() called
+2024-09-01 13:24:43,898 | INFO | read_config() finished. Loaded config {'port': 44516, 'bot_token': '7511480796:AAEeKgmNyoqpxL8ulxo7HAcsbYuoWNF-o0s', 'restaurants': [{'rest_name': 'Beerhouse', 'rest_id': '00001902', 'rest_pass': 'kurwabobr'}, {'rest_name': 'Beerhouse2', 'rest_id': '00001803', 'rest_pass': 'passabcd'}]}
+2024-09-01 13:24:43,904 | INFO | --------------------
+2024-09-01 13:24:43,904 | INFO | Report Server v2 init...
+2024-09-01 13:24:43,905 | INFO | read_db() finished. Loaded DB_FILE {'335678020': {'name': 'danil24v', 'rest_id': '00001902', 'rest_name': 'Beerhouse'}}
+2024-09-01 13:24:44,017 | INFO | [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:44516
+ * Running on http://172.20.10.2:44516
+2024-09-01 13:24:44,017 | INFO | [33mPress CTRL+C to quit[0m
+2024-09-01 13:24:48,074 | ERROR | Infinity polling exception: 'int' object has no attribute 'strip'
+2024-09-01 13:24:48,075 | ERROR | Exception traceback:
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/telebot/__init__.py", line 1101, in infinity_polling
+    self.polling(non_stop=True, timeout=timeout, long_polling_timeout=long_polling_timeout,
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/telebot/__init__.py", line 1189, in polling
+    self.__threaded_polling(non_stop=non_stop, interval=interval, timeout=timeout, long_polling_timeout=long_polling_timeout,
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/telebot/__init__.py", line 1264, in __threaded_polling
+    raise e
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/telebot/__init__.py", line 1226, in __threaded_polling
+    self.worker_pool.raise_exceptions()
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/telebot/util.py", line 150, in raise_exceptions
+    raise self.exception_info
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/telebot/util.py", line 93, in run
+    task(*args, **kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/telebot/__init__.py", line 8822, in _run_middlewares_and_handler
+    result = handler['function'](message)
+  File "/Users/mac/Documents/Progamming/Python/ReportClient2/server.py", line 182, in get_text_message
+    resp = get_current_user_state(chat_id=message.from_user.id)
+  File "/Users/mac/Documents/Progamming/Python/ReportClient2/server.py", line 160, in get_current_user_state
+    chat_id = chat_id.strip()
+AttributeError: 'int' object has no attribute 'strip'
+
+2024-09-01 13:25:01,760 | ERROR | Infinity polling: polling exited
+2024-09-01 13:25:01,760 | ERROR | Break infinity polling
+2024-09-01 13:25:01,761 | INFO | Ready :)
+2024-09-01 13:25:04,341 | INFO | read_config() called
+2024-09-01 13:25:04,341 | INFO | read_config() finished. Loaded config {'port': 44516, 'bot_token': '7511480796:AAEeKgmNyoqpxL8ulxo7HAcsbYuoWNF-o0s', 'restaurants': [{'rest_name': 'Beerhouse', 'rest_id': '00001902', 'rest_pass': 'kurwabobr'}, {'rest_name': 'Beerhouse2', 'rest_id': '00001803', 'rest_pass': 'passabcd'}]}
+2024-09-01 13:25:04,342 | INFO | --------------------
+2024-09-01 13:25:04,342 | INFO | Report Server v2 init...
+2024-09-01 13:25:04,342 | INFO | read_db() finished. Loaded DB_FILE {'335678020': {'name': 'danil24v', 'rest_id': '00001902', 'rest_name': 'Beerhouse'}}
+2024-09-01 13:25:04,347 | INFO | [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:44516
+ * Running on http://172.20.10.2:44516
+2024-09-01 13:25:04,347 | INFO | [33mPress CTRL+C to quit[0m
+2024-09-01 13:25:09,713 | ERROR | Infinity polling: polling exited
+2024-09-01 13:25:09,713 | ERROR | Break infinity polling
+2024-09-01 13:25:09,713 | INFO | Ready :)
+2024-09-01 13:25:59,760 | INFO | read_config() called
+2024-09-01 13:25:59,760 | INFO | read_config() finished. Loaded config {'port': 44516, 'bot_token': '7511480796:AAEeKgmNyoqpxL8ulxo7HAcsbYuoWNF-o0s', 'restaurants': [{'rest_name': 'Beerhouse', 'rest_id': '00001902', 'rest_pass': 'kurwabobr'}, {'rest_name': 'Beerhouse2', 'rest_id': '00001803', 'rest_pass': 'passabcd'}]}
+2024-09-01 13:25:59,761 | INFO | --------------------
+2024-09-01 13:25:59,761 | INFO | Report Server v2 init...
+2024-09-01 13:25:59,761 | INFO | read_db() finished. Loaded DB_FILE {'335678020': {'name': 'danil24v', 'rest_id': '00001902', 'rest_name': 'Beerhouse'}}
+2024-09-01 13:25:59,767 | INFO | [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:44516
+ * Running on http://172.20.10.2:44516
+2024-09-01 13:25:59,768 | INFO | [33mPress CTRL+C to quit[0m
+2024-09-01 13:26:02,162 | ERROR | Infinity polling exception: 'int' object has no attribute 'strip'
+2024-09-01 13:26:02,163 | ERROR | Exception traceback:
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/telebot/__init__.py", line 1101, in infinity_polling
+    self.polling(non_stop=True, timeout=timeout, long_polling_timeout=long_polling_timeout,
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/telebot/__init__.py", line 1189, in polling
+    self.__threaded_polling(non_stop=non_stop, interval=interval, timeout=timeout, long_polling_timeout=long_polling_timeout,
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/telebot/__init__.py", line 1264, in __threaded_polling
+    raise e
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/telebot/__init__.py", line 1226, in __threaded_polling
+    self.worker_pool.raise_exceptions()
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/telebot/util.py", line 150, in raise_exceptions
+    raise self.exception_info
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/telebot/util.py", line 93, in run
+    task(*args, **kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/telebot/__init__.py", line 8822, in _run_middlewares_and_handler
+    result = handler['function'](message)
+  File "/Users/mac/Documents/Progamming/Python/ReportClient2/server.py", line 185, in get_text_message
+    resp = get_current_user_state(chat_id=message.from_user.id)
+  File "/Users/mac/Documents/Progamming/Python/ReportClient2/server.py", line 160, in get_current_user_state
+    chat_id = chat_id.strip()
+AttributeError: 'int' object has no attribute 'strip'
+
+2024-09-01 13:26:17,596 | ERROR | Infinity polling: polling exited
+2024-09-01 13:26:17,597 | ERROR | Break infinity polling
+2024-09-01 13:26:17,597 | INFO | Ready :)
+2024-09-01 13:26:19,227 | INFO | read_config() called
+2024-09-01 13:26:19,227 | INFO | read_config() finished. Loaded config {'port': 44516, 'bot_token': '7511480796:AAEeKgmNyoqpxL8ulxo7HAcsbYuoWNF-o0s', 'restaurants': [{'rest_name': 'Beerhouse', 'rest_id': '00001902', 'rest_pass': 'kurwabobr'}, {'rest_name': 'Beerhouse2', 'rest_id': '00001803', 'rest_pass': 'passabcd'}]}
+2024-09-01 13:26:19,227 | INFO | --------------------
+2024-09-01 13:26:19,227 | INFO | Report Server v2 init...
+2024-09-01 13:26:19,227 | INFO | read_db() finished. Loaded DB_FILE {'335678020': {'name': 'danil24v', 'rest_id': '00001902', 'rest_name': 'Beerhouse'}}
+2024-09-01 13:26:19,246 | INFO | [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:44516
+ * Running on http://172.20.10.2:44516
+2024-09-01 13:26:19,246 | INFO | [33mPress CTRL+C to quit[0m
+2024-09-01 13:26:22,101 | ERROR | Infinity polling exception: 'int' object has no attribute 'strip'
+2024-09-01 13:26:22,102 | ERROR | Exception traceback:
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/telebot/__init__.py", line 1101, in infinity_polling
+    self.polling(non_stop=True, timeout=timeout, long_polling_timeout=long_polling_timeout,
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/telebot/__init__.py", line 1189, in polling
+    self.__threaded_polling(non_stop=non_stop, interval=interval, timeout=timeout, long_polling_timeout=long_polling_timeout,
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/telebot/__init__.py", line 1264, in __threaded_polling
+    raise e
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/telebot/__init__.py", line 1226, in __threaded_polling
+    self.worker_pool.raise_exceptions()
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/telebot/util.py", line 150, in raise_exceptions
+    raise self.exception_info
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/telebot/util.py", line 93, in run
+    task(*args, **kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/telebot/__init__.py", line 8822, in _run_middlewares_and_handler
+    result = handler['function'](message)
+  File "/Users/mac/Documents/Progamming/Python/ReportClient2/server.py", line 185, in get_text_message
+    resp = get_current_user_state(chat_id=message.from_user.id)
+  File "/Users/mac/Documents/Progamming/Python/ReportClient2/server.py", line 160, in get_current_user_state
+    chat_id = chat_id.strip()
+AttributeError: 'int' object has no attribute 'strip'
+
+2024-09-01 13:26:29,547 | ERROR | Infinity polling: polling exited
+2024-09-01 13:26:29,548 | ERROR | Break infinity polling
+2024-09-01 13:26:29,548 | INFO | Ready :)
+2024-09-01 13:26:30,337 | INFO | read_config() called
+2024-09-01 13:26:30,337 | INFO | read_config() finished. Loaded config {'port': 44516, 'bot_token': '7511480796:AAEeKgmNyoqpxL8ulxo7HAcsbYuoWNF-o0s', 'restaurants': [{'rest_name': 'Beerhouse', 'rest_id': '00001902', 'rest_pass': 'kurwabobr'}, {'rest_name': 'Beerhouse2', 'rest_id': '00001803', 'rest_pass': 'passabcd'}]}
+2024-09-01 13:26:30,338 | INFO | --------------------
+2024-09-01 13:26:30,338 | INFO | Report Server v2 init...
+2024-09-01 13:26:30,338 | INFO | read_db() finished. Loaded DB_FILE {'335678020': {'name': 'danil24v', 'rest_id': '00001902', 'rest_name': 'Beerhouse'}}
+2024-09-01 13:26:30,343 | INFO | [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:44516
+ * Running on http://172.20.10.2:44516
+2024-09-01 13:26:30,343 | INFO | [33mPress CTRL+C to quit[0m
+2024-09-01 13:27:20,163 | ERROR | Infinity polling: polling exited
+2024-09-01 13:27:20,164 | ERROR | Break infinity polling
+2024-09-01 13:27:20,164 | INFO | Ready :)

@@ -1,7 +1,7 @@
 {
-   "get_ip":"https://itkit.com.ua/telbot/getip.php",
-   "default_ip":"2.57.36.136",
-   "restaurant_id":1883,
+   "get_addr":"https://i222tkit.com.ua/telbot/getip.php",
+   "default_addr":"http://2.57.36.136:44516",
+   "restaurant_id": "00001902",
    "sleep_parse_sec":120,
    "sleep_send_sec":10,
    "printer_dir":"/Users/mac/Downloads/Printers",
