@@ -77,6 +77,18 @@ def read_config() -> dict:
     return ret_dict
 
 
+def get_rest_data(rest_id: str) -> dict:
+    rest_list = config['restaurants']
+    for rest in rest_list:
+        if rest['rest_id'].strip() == rest_id.strip():
+            return rest
+
+    return {
+         "rest_name": "Unknown",
+         "rest_id": "0000000",
+         "rest_pass": "0000000"
+    }
+
 def get_subs_for_rest(rest_id: str) -> list:
     subs = []
     for user in db.keys():
@@ -119,8 +131,11 @@ def get_rep():
     if not json:
         raise Exception('No json in request.')
     rest_id = json["rest_id"]
-    rep_title = json["rep_title"]
+    #rest_data = get_rest_data(rest_id)
+    rep_title = f'{json["rep_title"]}'
     rep_text = json["rep_text"]
+
+
     send_to_users(rest_id, rep_title, rep_text)
 
     return 'OK'
