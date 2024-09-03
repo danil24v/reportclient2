@@ -82,7 +82,8 @@ def get_subs_for_rest(rest_id: str) -> list:
     for user in db.keys():
         try:
             if db[user]['rest_id'] == rest_id:
-                subs.append(user)
+                chat_id = int(user.replace('u', ''))
+                subs.append(chat_id)
         except Exception as e:
             logger.error(f'get_subs_for_rest error: {traceback.format_exc()}, continue...')
 
@@ -101,10 +102,14 @@ def send_to_users(rest_id: str, rep_title: str, text: str):
         logger.warning(f'No subs for {rest_id}')
         return
 
-    doc = open(path, 'rb')
     logger.warning(f'Report will be sent to {len(subs)} subs.')
     for sub_id in subs:
-        bot.send_document(sub_id, doc, caption=rep_title)
+        try:
+            doc = open(path, 'rb')
+            bot.send_document(sub_id, doc, caption=rep_title)
+            doc.close()
+        except Exception as e:
+            logger.warning(f'Can not send doc to {sub_id}: {traceback.format_exc()}')
 
 
 @app.route('/send_rep', methods=['POST'])
