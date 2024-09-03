@@ -9,6 +9,8 @@ from datetime import datetime
 
 from flask import Flask, request, jsonify
 
+db = None
+
 app = Flask(__name__)
 
 HOST = "127.0.0.1"
@@ -50,7 +52,7 @@ def read_db():
     logger.info(f'read_db() finished. Loaded DB_FILE {ret_dict}')
     return ret_dict
 
-def dump_db(db: dict):
+def dump_db():
     logger.info(f'dump_db() called. arg: {db}')
     db_str = json.dumps(db)
     with open(DB_FILE, 'w') as f:
@@ -126,7 +128,7 @@ def try_login(message) -> str:
     if len(split) != 2 or message.text[0] != '@':
         return None
 
-    user_id = message.from_user.id
+    user_id = f"u{message.from_user.id}"
     user_name = message.chat.username
     rest_id = split[0][1:]
     rest_pass = split[1]
@@ -153,16 +155,19 @@ def try_login(message) -> str:
     if rest_id not in db[user_id]:
         db[user_id].update({'rest_id': rest_id, 'rest_name': rest_name})
         logger.info(f'DB: user {user_id} subscribed to {rest_id} restaurant.')
-    dump_db(db)
+    dump_db()
     return f'Вы успешно подключились к ресторану {found_rest}'
 
-def get_current_user_state(chat_id: str) -> str:
-    chat_id = f'{chat_id}'.strip()
+def get_current_user_state(chat: str) -> str:
+    #read_db()
+    chat_id = f"u{chat}"
+    print(chat, chat_id, db)
     try:
         rest_id = db[chat_id]['rest_id']
         rest_name = db[chat_id]['rest_name']
         return f'Вы подписаны на отчеты {rest_name} (ID:{rest_id})'
     except KeyError as e:
+        print(traceback.format_exc())
         return f'Подписка пуста.'
 
 config = read_config()
@@ -182,13 +187,12 @@ def get_text_message(message):
         doc = open('logs_server.txt', 'rb')
         bot.send_document(message.from_user.id, doc, caption='LOGS')
     else:
-        resp = get_current_user_state(chat_id=message.from_user.id)
+        resp = get_current_user_state(str(message.from_user.id))
         bot.send_message(message.from_user.id, resp)
 
 if __name__ == '__main__':
     logger.info('--------------------')
     logger.info('Report HTTP Server v2 init...')
-    global db
     db = read_db()
 
     thread = threading.Thread(target=run_http_server)

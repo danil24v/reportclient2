@@ -9,7 +9,6 @@ import json
 import threading
 import time
 import traceback
-import re
 
 
 CONFIG_FILE = "config.json"
@@ -111,7 +110,7 @@ def get_report_by_markers(marker: list, lines: list) -> list:
     for line in lines:
         line = line.replace('\n', '')
         if not rep_found:   # Если не наткнулись на начало отчета
-            if re.match(mark_start, line):
+            if mark_start in line:
                 rep_name_line = mark_name
                 rep_lines.append(rep_name_line)
                 if config['include_markers'] == True:
@@ -121,7 +120,7 @@ def get_report_by_markers(marker: list, lines: list) -> list:
             else:
                 print(f'do not match:"{line}"')
         else:   # Если уже читаем отчет
-            if mark_end != '$default' and re.match(mark_end, line):
+            if mark_end != '$default' and mark_end in line:
                 print(f'Found END match in line:{line}')
                 if config['include_markers'] == True:
                     rep_lines.append(line)

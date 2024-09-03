@@ -292,3 +292,517 @@ AttributeError: 'int' object has no attribute 'strip'
 2024-09-01 13:27:20,163 | ERROR | Infinity polling: polling exited
 2024-09-01 13:27:20,164 | ERROR | Break infinity polling
 2024-09-01 13:27:20,164 | INFO | Ready :)
+2024-09-03 18:33:37,811 | INFO | read_config() called
+2024-09-03 18:33:37,813 | INFO | read_config() finished. Loaded config {'port': 44516, 'bot_token': '7511480796:AAEeKgmNyoqpxL8ulxo7HAcsbYuoWNF-o0s', 'restaurants': [{'rest_name': 'Beerhouse', 'rest_id': '00001902', 'rest_pass': 'kurwabobr'}, {'rest_name': 'Beerhouse2', 'rest_id': '00001803', 'rest_pass': 'passabcd'}]}
+2024-09-03 18:33:37,813 | INFO | --------------------
+2024-09-03 18:33:37,813 | INFO | Report HTTP Server v2 init...
+2024-09-03 18:33:37,813 | INFO | read_db() finished. Loaded DB_FILE {'335678020': {'name': 'danil24v', 'rest_id': '00001902', 'rest_name': 'Beerhouse'}}
+2024-09-03 18:33:38,001 | INFO | [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:44516
+ * Running on http://192.168.0.2:44516
+2024-09-03 18:33:38,001 | INFO | [33mPress CTRL+C to quit[0m
+2024-09-03 18:34:06,342 | INFO | Attempt to login from 295602428:zubkoff_a with @00001902 kurwabobr
+2024-09-03 18:34:06,344 | INFO | DB: key for user 295602428 : zubkoff_a created.
+2024-09-03 18:34:06,344 | INFO | DB: user 295602428 subscribed to 00001902 restaurant.
+2024-09-03 18:34:06,344 | INFO | dump_db() called. arg: {'335678020': {'name': 'danil24v', 'rest_id': '00001902', 'rest_name': 'Beerhouse'}, 295602428: {'name': 'zubkoff_a', 'rest_id': '00001902', 'rest_name': 'Beerhouse'}}
+2024-09-03 18:34:06,345 | INFO | dump_db() finished. DB dumped.
+2024-09-03 18:35:14,156 | ERROR | Infinity polling: polling exited
+2024-09-03 18:35:14,156 | ERROR | Break infinity polling
+2024-09-03 18:35:19,200 | INFO | read_config() called
+2024-09-03 18:35:19,200 | INFO | read_config() finished. Loaded config {'port': 44516, 'bot_token': '7511480796:AAEeKgmNyoqpxL8ulxo7HAcsbYuoWNF-o0s', 'restaurants': [{'rest_name': 'Beerhouse', 'rest_id': '00001902', 'rest_pass': 'kurwabobr'}, {'rest_name': 'Beerhouse2', 'rest_id': '00001803', 'rest_pass': 'passabcd'}]}
+2024-09-03 18:35:19,200 | INFO | --------------------
+2024-09-03 18:35:19,200 | INFO | Report HTTP Server v2 init...
+2024-09-03 18:35:19,201 | INFO | read_db() finished. Loaded DB_FILE {'335678020': {'name': 'danil24v', 'rest_id': '00001902', 'rest_name': 'Beerhouse'}, '295602428': {'name': 'zubkoff_a', 'rest_id': '00001902', 'rest_name': 'Beerhouse'}}
+2024-09-03 18:35:19,205 | INFO | [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:44516
+ * Running on http://192.168.0.2:44516
+2024-09-03 18:35:19,205 | INFO | [33mPress CTRL+C to quit[0m
+2024-09-03 18:36:34,759 | ERROR | Infinity polling: polling exited
+2024-09-03 18:36:34,761 | ERROR | Break infinity polling
+2024-09-03 18:36:39,246 | INFO | read_config() called
+2024-09-03 18:36:39,246 | INFO | read_config() finished. Loaded config {'port': 44516, 'bot_token': '7511480796:AAEeKgmNyoqpxL8ulxo7HAcsbYuoWNF-o0s', 'restaurants': [{'rest_name': 'Beerhouse', 'rest_id': '00001902', 'rest_pass': 'kurwabobr'}, {'rest_name': 'Beerhouse2', 'rest_id': '00001803', 'rest_pass': 'passabcd'}]}
+2024-09-03 18:36:39,247 | INFO | --------------------
+2024-09-03 18:36:39,247 | INFO | Report HTTP Server v2 init...
+2024-09-03 18:36:39,247 | INFO | read_db() finished. Loaded DB_FILE {}
+2024-09-03 18:36:39,442 | INFO | [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:44516
+ * Running on http://192.168.0.2:44516
+2024-09-03 18:36:39,442 | INFO | [33mPress CTRL+C to quit[0m
+2024-09-03 18:36:52,186 | INFO | Attempt to login from 335678020:danil24v with @00001902 kurwabobr
+2024-09-03 18:36:52,187 | INFO | DB: key for user 335678020 : danil24v created.
+2024-09-03 18:36:52,187 | INFO | DB: user 335678020 subscribed to 00001902 restaurant.
+2024-09-03 18:36:52,195 | ERROR | Infinity polling exception: local variable 'db' referenced before assignment
+2024-09-03 18:36:52,196 | ERROR | Exception traceback:
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/telebot/__init__.py", line 1101, in infinity_polling
+    self.polling(non_stop=True, timeout=timeout, long_polling_timeout=long_polling_timeout,
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/telebot/__init__.py", line 1189, in polling
+    self.__threaded_polling(non_stop=non_stop, interval=interval, timeout=timeout, long_polling_timeout=long_polling_timeout,
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/telebot/__init__.py", line 1264, in __threaded_polling
+    raise e
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/telebot/__init__.py", line 1226, in __threaded_polling
+    self.worker_pool.raise_exceptions()
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/telebot/util.py", line 150, in raise_exceptions
+    raise self.exception_info
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/telebot/util.py", line 93, in run
+    task(*args, **kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/telebot/__init__.py", line 8822, in _run_middlewares_and_handler
+    result = handler['function'](message)
+  File "/Users/mac/Documents/Progamming/Python/ReportClient2/server.py", line 179, in get_text_message
+    resp = try_login(message)
+  File "/Users/mac/Documents/Progamming/Python/ReportClient2/server.py", line 157, in try_login
+    dump_db(db)
+  File "/Users/mac/Documents/Progamming/Python/ReportClient2/server.py", line 54, in dump_db
+    logger.info(f'dump_db() called. arg: {db}')
+UnboundLocalError: local variable 'db' referenced before assignment
+
+2024-09-03 18:37:05,538 | ERROR | Infinity polling: polling exited
+2024-09-03 18:37:05,538 | ERROR | Break infinity polling
+2024-09-03 18:37:14,915 | INFO | read_config() called
+2024-09-03 18:37:14,915 | INFO | read_config() finished. Loaded config {'port': 44516, 'bot_token': '7511480796:AAEeKgmNyoqpxL8ulxo7HAcsbYuoWNF-o0s', 'restaurants': [{'rest_name': 'Beerhouse', 'rest_id': '00001902', 'rest_pass': 'kurwabobr'}, {'rest_name': 'Beerhouse2', 'rest_id': '00001803', 'rest_pass': 'passabcd'}]}
+2024-09-03 18:37:14,915 | INFO | --------------------
+2024-09-03 18:37:14,915 | INFO | Report HTTP Server v2 init...
+2024-09-03 18:37:14,915 | INFO | read_db() finished. Loaded DB_FILE {}
+2024-09-03 18:37:14,919 | INFO | [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:44516
+ * Running on http://192.168.0.2:44516
+2024-09-03 18:37:14,920 | INFO | [33mPress CTRL+C to quit[0m
+2024-09-03 18:37:16,673 | INFO | read_config() called
+2024-09-03 18:37:16,673 | INFO | read_config() finished. Loaded config {'port': 44516, 'bot_token': '7511480796:AAEeKgmNyoqpxL8ulxo7HAcsbYuoWNF-o0s', 'restaurants': [{'rest_name': 'Beerhouse', 'rest_id': '00001902', 'rest_pass': 'kurwabobr'}, {'rest_name': 'Beerhouse2', 'rest_id': '00001803', 'rest_pass': 'passabcd'}]}
+2024-09-03 18:37:16,673 | INFO | --------------------
+2024-09-03 18:37:16,673 | INFO | Report HTTP Server v2 init...
+2024-09-03 18:37:16,674 | INFO | read_db() finished. Loaded DB_FILE {}
+2024-09-03 18:37:16,678 | INFO | [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:44516
+ * Running on http://192.168.0.2:44516
+2024-09-03 18:37:16,678 | INFO | [33mPress CTRL+C to quit[0m
+2024-09-03 18:37:39,006 | INFO | Attempt to login from 335678020:danil24v with @00001902 kurwabobr
+2024-09-03 18:37:39,013 | ERROR | Infinity polling exception: local variable 'db' referenced before assignment
+2024-09-03 18:37:39,014 | ERROR | Exception traceback:
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/telebot/__init__.py", line 1101, in infinity_polling
+    self.polling(non_stop=True, timeout=timeout, long_polling_timeout=long_polling_timeout,
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/telebot/__init__.py", line 1189, in polling
+    self.__threaded_polling(non_stop=non_stop, interval=interval, timeout=timeout, long_polling_timeout=long_polling_timeout,
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/telebot/__init__.py", line 1264, in __threaded_polling
+    raise e
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/telebot/__init__.py", line 1226, in __threaded_polling
+    self.worker_pool.raise_exceptions()
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/telebot/util.py", line 150, in raise_exceptions
+    raise self.exception_info
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/telebot/util.py", line 93, in run
+    task(*args, **kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/telebot/__init__.py", line 8822, in _run_middlewares_and_handler
+    result = handler['function'](message)
+  File "/Users/mac/Documents/Progamming/Python/ReportClient2/server.py", line 179, in get_text_message
+    resp = try_login(message)
+  File "/Users/mac/Documents/Progamming/Python/ReportClient2/server.py", line 150, in try_login
+    if user_id not in db.keys():
+UnboundLocalError: local variable 'db' referenced before assignment
+
+2024-09-03 18:37:54,623 | ERROR | Infinity polling: polling exited
+2024-09-03 18:37:54,624 | ERROR | Break infinity polling
+2024-09-03 18:38:42,168 | INFO | read_config() called
+2024-09-03 18:38:42,169 | INFO | read_config() finished. Loaded config {'port': 44516, 'bot_token': '7511480796:AAEeKgmNyoqpxL8ulxo7HAcsbYuoWNF-o0s', 'restaurants': [{'rest_name': 'Beerhouse', 'rest_id': '00001902', 'rest_pass': 'kurwabobr'}, {'rest_name': 'Beerhouse2', 'rest_id': '00001803', 'rest_pass': 'passabcd'}]}
+2024-09-03 18:38:42,169 | INFO | --------------------
+2024-09-03 18:38:42,169 | INFO | Report HTTP Server v2 init...
+2024-09-03 18:38:42,169 | INFO | read_db() finished. Loaded DB_FILE {}
+2024-09-03 18:38:42,315 | INFO | [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:44516
+ * Running on http://192.168.0.2:44516
+2024-09-03 18:38:42,315 | INFO | [33mPress CTRL+C to quit[0m
+2024-09-03 18:38:49,133 | INFO | Attempt to login from 335678020:danil24v with @00001902 kurwabobr
+2024-09-03 18:38:49,134 | INFO | DB: key for user 335678020 : danil24v created.
+2024-09-03 18:38:49,134 | INFO | DB: user 335678020 subscribed to 00001902 restaurant.
+2024-09-03 18:38:49,135 | INFO | dump_db() called. arg: {335678020: {'name': 'danil24v', 'rest_id': '00001902', 'rest_name': 'Beerhouse'}}
+2024-09-03 18:38:49,135 | INFO | dump_db() finished. DB dumped.
+2024-09-03 18:39:25,178 | ERROR | Infinity polling: polling exited
+2024-09-03 18:39:25,180 | ERROR | Break infinity polling
+2024-09-03 18:39:28,864 | INFO | read_config() called
+2024-09-03 18:39:28,864 | INFO | read_config() finished. Loaded config {'port': 44516, 'bot_token': '7511480796:AAEeKgmNyoqpxL8ulxo7HAcsbYuoWNF-o0s', 'restaurants': [{'rest_name': 'Beerhouse', 'rest_id': '00001902', 'rest_pass': 'kurwabobr'}, {'rest_name': 'Beerhouse2', 'rest_id': '00001803', 'rest_pass': 'passabcd'}]}
+2024-09-03 18:39:28,864 | INFO | --------------------
+2024-09-03 18:39:28,865 | INFO | Report HTTP Server v2 init...
+2024-09-03 18:39:28,865 | INFO | read_db() finished. Loaded DB_FILE {'335678020': {'name': 'danil24v', 'rest_id': '00001902', 'rest_name': 'Beerhouse'}}
+2024-09-03 18:39:28,869 | INFO | [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:44516
+ * Running on http://192.168.0.2:44516
+2024-09-03 18:39:28,869 | INFO | [33mPress CTRL+C to quit[0m
+2024-09-03 18:39:30,732 | INFO | read_db() finished. Loaded DB_FILE {'335678020': {'name': 'danil24v', 'rest_id': '00001902', 'rest_name': 'Beerhouse'}}
+2024-09-03 18:39:34,494 | INFO | read_db() finished. Loaded DB_FILE {'335678020': {'name': 'danil24v', 'rest_id': '00001902', 'rest_name': 'Beerhouse'}}
+2024-09-03 18:39:40,777 | ERROR | Infinity polling: polling exited
+2024-09-03 18:39:40,777 | ERROR | Break infinity polling
+2024-09-03 18:39:45,286 | INFO | read_config() called
+2024-09-03 18:39:45,287 | INFO | read_config() finished. Loaded config {'port': 44516, 'bot_token': '7511480796:AAEeKgmNyoqpxL8ulxo7HAcsbYuoWNF-o0s', 'restaurants': [{'rest_name': 'Beerhouse', 'rest_id': '00001902', 'rest_pass': 'kurwabobr'}, {'rest_name': 'Beerhouse2', 'rest_id': '00001803', 'rest_pass': 'passabcd'}]}
+2024-09-03 18:39:45,287 | INFO | --------------------
+2024-09-03 18:39:45,287 | INFO | Report HTTP Server v2 init...
+2024-09-03 18:39:45,287 | INFO | read_db() finished. Loaded DB_FILE {}
+2024-09-03 18:39:45,291 | INFO | [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:44516
+ * Running on http://192.168.0.2:44516
+2024-09-03 18:39:45,291 | INFO | [33mPress CTRL+C to quit[0m
+2024-09-03 18:39:47,983 | INFO | read_db() finished. Loaded DB_FILE {}
+2024-09-03 18:39:55,524 | INFO | Attempt to login from 335678020:danil24v with @00001902 kurwabobr
+2024-09-03 18:39:55,526 | INFO | DB: key for user 335678020 : danil24v created.
+2024-09-03 18:39:55,526 | INFO | DB: user 335678020 subscribed to 00001902 restaurant.
+2024-09-03 18:39:55,527 | INFO | dump_db() called. arg: {335678020: {'name': 'danil24v', 'rest_id': '00001902', 'rest_name': 'Beerhouse'}}
+2024-09-03 18:39:55,529 | INFO | dump_db() finished. DB dumped.
+2024-09-03 18:39:56,952 | INFO | read_db() finished. Loaded DB_FILE {'335678020': {'name': 'danil24v', 'rest_id': '00001902', 'rest_name': 'Beerhouse'}}
+2024-09-03 18:39:59,024 | INFO | read_db() finished. Loaded DB_FILE {'335678020': {'name': 'danil24v', 'rest_id': '00001902', 'rest_name': 'Beerhouse'}}
+2024-09-03 18:40:00,187 | INFO | read_db() finished. Loaded DB_FILE {'335678020': {'name': 'danil24v', 'rest_id': '00001902', 'rest_name': 'Beerhouse'}}
+2024-09-03 18:40:00,739 | INFO | read_db() finished. Loaded DB_FILE {'335678020': {'name': 'danil24v', 'rest_id': '00001902', 'rest_name': 'Beerhouse'}}
+2024-09-03 18:40:00,958 | INFO | read_db() finished. Loaded DB_FILE {'335678020': {'name': 'danil24v', 'rest_id': '00001902', 'rest_name': 'Beerhouse'}}
+2024-09-03 18:40:01,377 | INFO | read_db() finished. Loaded DB_FILE {'335678020': {'name': 'danil24v', 'rest_id': '00001902', 'rest_name': 'Beerhouse'}}
+2024-09-03 18:40:13,322 | ERROR | Infinity polling: polling exited
+2024-09-03 18:40:13,322 | ERROR | Break infinity polling
+2024-09-03 18:40:14,967 | INFO | read_config() called
+2024-09-03 18:40:14,967 | INFO | read_config() finished. Loaded config {'port': 44516, 'bot_token': '7511480796:AAEeKgmNyoqpxL8ulxo7HAcsbYuoWNF-o0s', 'restaurants': [{'rest_name': 'Beerhouse', 'rest_id': '00001902', 'rest_pass': 'kurwabobr'}, {'rest_name': 'Beerhouse2', 'rest_id': '00001803', 'rest_pass': 'passabcd'}]}
+2024-09-03 18:40:14,967 | INFO | --------------------
+2024-09-03 18:40:14,967 | INFO | Report HTTP Server v2 init...
+2024-09-03 18:40:14,968 | INFO | read_db() finished. Loaded DB_FILE {'335678020': {'name': 'danil24v', 'rest_id': '00001902', 'rest_name': 'Beerhouse'}}
+2024-09-03 18:40:14,972 | INFO | [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:44516
+ * Running on http://192.168.0.2:44516
+2024-09-03 18:40:14,972 | INFO | [33mPress CTRL+C to quit[0m
+2024-09-03 18:40:19,817 | ERROR | Infinity polling: polling exited
+2024-09-03 18:40:19,818 | ERROR | Break infinity polling
+2024-09-03 18:40:22,565 | INFO | read_config() called
+2024-09-03 18:40:22,565 | INFO | read_config() finished. Loaded config {'port': 44516, 'bot_token': '7511480796:AAEeKgmNyoqpxL8ulxo7HAcsbYuoWNF-o0s', 'restaurants': [{'rest_name': 'Beerhouse', 'rest_id': '00001902', 'rest_pass': 'kurwabobr'}, {'rest_name': 'Beerhouse2', 'rest_id': '00001803', 'rest_pass': 'passabcd'}]}
+2024-09-03 18:40:22,565 | INFO | --------------------
+2024-09-03 18:40:22,565 | INFO | Report HTTP Server v2 init...
+2024-09-03 18:40:22,565 | INFO | read_db() finished. Loaded DB_FILE {}
+2024-09-03 18:40:22,569 | INFO | [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:44516
+ * Running on http://192.168.0.2:44516
+2024-09-03 18:40:22,569 | INFO | [33mPress CTRL+C to quit[0m
+2024-09-03 18:40:24,770 | INFO | read_db() finished. Loaded DB_FILE {}
+2024-09-03 18:40:32,134 | INFO | Attempt to login from 335678020:danil24v with @00001902 kurwabobr
+2024-09-03 18:40:32,135 | INFO | DB: key for user 335678020 : danil24v created.
+2024-09-03 18:40:32,135 | INFO | DB: user 335678020 subscribed to 00001902 restaurant.
+2024-09-03 18:40:32,135 | INFO | dump_db() called. arg: {335678020: {'name': 'danil24v', 'rest_id': '00001902', 'rest_name': 'Beerhouse'}}
+2024-09-03 18:40:32,137 | INFO | dump_db() finished. DB dumped.
+2024-09-03 18:40:33,192 | INFO | read_db() finished. Loaded DB_FILE {'335678020': {'name': 'danil24v', 'rest_id': '00001902', 'rest_name': 'Beerhouse'}}
+2024-09-03 18:41:24,079 | ERROR | Infinity polling: polling exited
+2024-09-03 18:41:24,080 | ERROR | Break infinity polling
+2024-09-03 18:41:27,031 | INFO | read_config() called
+2024-09-03 18:41:27,031 | INFO | read_config() finished. Loaded config {'port': 44516, 'bot_token': '7511480796:AAEeKgmNyoqpxL8ulxo7HAcsbYuoWNF-o0s', 'restaurants': [{'rest_name': 'Beerhouse', 'rest_id': '00001902', 'rest_pass': 'kurwabobr'}, {'rest_name': 'Beerhouse2', 'rest_id': '00001803', 'rest_pass': 'passabcd'}]}
+2024-09-03 18:41:27,031 | INFO | --------------------
+2024-09-03 18:41:27,031 | INFO | Report HTTP Server v2 init...
+2024-09-03 18:41:27,032 | INFO | read_db() finished. Loaded DB_FILE {'335678020': {'name': 'danil24v', 'rest_id': '00001902', 'rest_name': 'Beerhouse'}}
+2024-09-03 18:41:27,035 | INFO | [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:44516
+ * Running on http://192.168.0.2:44516
+2024-09-03 18:41:27,035 | INFO | [33mPress CTRL+C to quit[0m
+2024-09-03 18:41:30,427 | INFO | read_db() finished. Loaded DB_FILE {'335678020': {'name': 'danil24v', 'rest_id': '00001902', 'rest_name': 'Beerhouse'}}
+2024-09-03 18:41:33,160 | ERROR | Infinity polling: polling exited
+2024-09-03 18:41:33,161 | ERROR | Break infinity polling
+2024-09-03 18:41:38,190 | INFO | read_config() called
+2024-09-03 18:41:38,190 | INFO | read_config() finished. Loaded config {'port': 44516, 'bot_token': '7511480796:AAEeKgmNyoqpxL8ulxo7HAcsbYuoWNF-o0s', 'restaurants': [{'rest_name': 'Beerhouse', 'rest_id': '00001902', 'rest_pass': 'kurwabobr'}, {'rest_name': 'Beerhouse2', 'rest_id': '00001803', 'rest_pass': 'passabcd'}]}
+2024-09-03 18:41:38,190 | INFO | --------------------
+2024-09-03 18:41:38,190 | INFO | Report HTTP Server v2 init...
+2024-09-03 18:41:38,190 | INFO | read_db() finished. Loaded DB_FILE {}
+2024-09-03 18:41:38,193 | INFO | [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:44516
+ * Running on http://192.168.0.2:44516
+2024-09-03 18:41:38,193 | INFO | [33mPress CTRL+C to quit[0m
+2024-09-03 18:41:42,980 | INFO | Attempt to login from 335678020:danil24v with @00001902 kurwabobr
+2024-09-03 18:41:42,980 | INFO | DB: key for user 335678020 : danil24v created.
+2024-09-03 18:41:42,981 | INFO | DB: user 335678020 subscribed to 00001902 restaurant.
+2024-09-03 18:41:42,982 | INFO | dump_db() called. arg: {335678020: {'name': 'danil24v', 'rest_id': '00001902', 'rest_name': 'Beerhouse'}}
+2024-09-03 18:41:42,983 | INFO | dump_db() finished. DB dumped.
+2024-09-03 18:41:44,171 | INFO | read_db() finished. Loaded DB_FILE {'335678020': {'name': 'danil24v', 'rest_id': '00001902', 'rest_name': 'Beerhouse'}}
+2024-09-03 18:42:21,211 | ERROR | Infinity polling: polling exited
+2024-09-03 18:42:21,211 | ERROR | Break infinity polling
+2024-09-03 18:42:23,715 | INFO | read_config() called
+2024-09-03 18:42:23,716 | INFO | read_config() finished. Loaded config {'port': 44516, 'bot_token': '7511480796:AAEeKgmNyoqpxL8ulxo7HAcsbYuoWNF-o0s', 'restaurants': [{'rest_name': 'Beerhouse', 'rest_id': '00001902', 'rest_pass': 'kurwabobr'}, {'rest_name': 'Beerhouse2', 'rest_id': '00001803', 'rest_pass': 'passabcd'}]}
+2024-09-03 18:42:23,716 | INFO | --------------------
+2024-09-03 18:42:23,716 | INFO | Report HTTP Server v2 init...
+2024-09-03 18:42:23,716 | INFO | read_db() finished. Loaded DB_FILE {'335678020': {'name': 'danil24v', 'rest_id': '00001902', 'rest_name': 'Beerhouse'}}
+2024-09-03 18:42:23,922 | INFO | [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:44516
+ * Running on http://192.168.0.2:44516
+2024-09-03 18:42:23,923 | INFO | [33mPress CTRL+C to quit[0m
+2024-09-03 18:42:28,227 | ERROR | Infinity polling: polling exited
+2024-09-03 18:42:28,227 | ERROR | Break infinity polling
+2024-09-03 18:42:29,509 | INFO | read_config() called
+2024-09-03 18:42:29,509 | INFO | read_config() finished. Loaded config {'port': 44516, 'bot_token': '7511480796:AAEeKgmNyoqpxL8ulxo7HAcsbYuoWNF-o0s', 'restaurants': [{'rest_name': 'Beerhouse', 'rest_id': '00001902', 'rest_pass': 'kurwabobr'}, {'rest_name': 'Beerhouse2', 'rest_id': '00001803', 'rest_pass': 'passabcd'}]}
+2024-09-03 18:42:29,509 | INFO | --------------------
+2024-09-03 18:42:29,509 | INFO | Report HTTP Server v2 init...
+2024-09-03 18:42:29,509 | INFO | read_db() finished. Loaded DB_FILE {}
+2024-09-03 18:42:29,513 | INFO | [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:44516
+ * Running on http://192.168.0.2:44516
+2024-09-03 18:42:29,514 | INFO | [33mPress CTRL+C to quit[0m
+2024-09-03 18:42:31,484 | INFO | read_db() finished. Loaded DB_FILE {}
+2024-09-03 18:42:35,570 | INFO | Attempt to login from 335678020:danil24v with @00001902 kurwabobr
+2024-09-03 18:42:35,570 | INFO | DB: key for user 335678020 : danil24v created.
+2024-09-03 18:42:35,570 | INFO | DB: user 335678020 subscribed to 00001902 restaurant.
+2024-09-03 18:42:35,571 | INFO | dump_db() called. arg: {335678020: {'name': 'danil24v', 'rest_id': '00001902', 'rest_name': 'Beerhouse'}}
+2024-09-03 18:42:35,574 | INFO | dump_db() finished. DB dumped.
+2024-09-03 18:42:36,480 | INFO | read_db() finished. Loaded DB_FILE {'335678020': {'name': 'danil24v', 'rest_id': '00001902', 'rest_name': 'Beerhouse'}}
+2024-09-03 18:42:59,811 | ERROR | Infinity polling: polling exited
+2024-09-03 18:42:59,812 | ERROR | Break infinity polling
+2024-09-03 18:43:04,995 | INFO | read_config() called
+2024-09-03 18:43:04,995 | INFO | read_config() finished. Loaded config {'port': 44516, 'bot_token': '7511480796:AAEeKgmNyoqpxL8ulxo7HAcsbYuoWNF-o0s', 'restaurants': [{'rest_name': 'Beerhouse', 'rest_id': '00001902', 'rest_pass': 'kurwabobr'}, {'rest_name': 'Beerhouse2', 'rest_id': '00001803', 'rest_pass': 'passabcd'}]}
+2024-09-03 18:43:04,995 | INFO | --------------------
+2024-09-03 18:43:04,995 | INFO | Report HTTP Server v2 init...
+2024-09-03 18:43:04,995 | INFO | read_db() finished. Loaded DB_FILE {}
+2024-09-03 18:43:05,000 | INFO | [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:44516
+ * Running on http://192.168.0.2:44516
+2024-09-03 18:43:05,000 | INFO | [33mPress CTRL+C to quit[0m
+2024-09-03 18:43:08,072 | INFO | read_db() finished. Loaded DB_FILE {}
+2024-09-03 18:43:11,659 | INFO | Attempt to login from 335678020:danil24v with @00001902 kurwabobr
+2024-09-03 18:43:11,660 | INFO | DB: key for user 335678020 : danil24v created.
+2024-09-03 18:43:11,660 | INFO | DB: user 335678020 subscribed to 00001902 restaurant.
+2024-09-03 18:43:11,661 | INFO | dump_db() called. arg: {335678020: {'name': 'danil24v', 'rest_id': '00001902', 'rest_name': 'Beerhouse'}}
+2024-09-03 18:43:11,661 | INFO | dump_db() finished. DB dumped.
+2024-09-03 18:43:12,394 | INFO | read_db() finished. Loaded DB_FILE {'335678020': {'name': 'danil24v', 'rest_id': '00001902', 'rest_name': 'Beerhouse'}}
+2024-09-03 18:43:43,799 | ERROR | Infinity polling: polling exited
+2024-09-03 18:43:43,800 | ERROR | Break infinity polling
+2024-09-03 18:43:47,294 | INFO | read_config() called
+2024-09-03 18:43:47,294 | INFO | read_config() finished. Loaded config {'port': 44516, 'bot_token': '7511480796:AAEeKgmNyoqpxL8ulxo7HAcsbYuoWNF-o0s', 'restaurants': [{'rest_name': 'Beerhouse', 'rest_id': '00001902', 'rest_pass': 'kurwabobr'}, {'rest_name': 'Beerhouse2', 'rest_id': '00001803', 'rest_pass': 'passabcd'}]}
+2024-09-03 18:43:47,294 | INFO | --------------------
+2024-09-03 18:43:47,294 | INFO | Report HTTP Server v2 init...
+2024-09-03 18:43:47,294 | INFO | read_db() finished. Loaded DB_FILE {'335678020': {'name': 'danil24v', 'rest_id': '00001902', 'rest_name': 'Beerhouse'}}
+2024-09-03 18:43:47,298 | INFO | [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:44516
+ * Running on http://192.168.0.2:44516
+2024-09-03 18:43:47,298 | INFO | [33mPress CTRL+C to quit[0m
+2024-09-03 18:43:50,466 | INFO | read_db() finished. Loaded DB_FILE {'335678020': {'name': 'danil24v', 'rest_id': '00001902', 'rest_name': 'Beerhouse'}}
+2024-09-03 18:43:56,080 | ERROR | Infinity polling: polling exited
+2024-09-03 18:43:56,081 | ERROR | Break infinity polling
+2024-09-03 18:43:57,474 | INFO | read_config() called
+2024-09-03 18:43:57,475 | INFO | read_config() finished. Loaded config {'port': 44516, 'bot_token': '7511480796:AAEeKgmNyoqpxL8ulxo7HAcsbYuoWNF-o0s', 'restaurants': [{'rest_name': 'Beerhouse', 'rest_id': '00001902', 'rest_pass': 'kurwabobr'}, {'rest_name': 'Beerhouse2', 'rest_id': '00001803', 'rest_pass': 'passabcd'}]}
+2024-09-03 18:43:57,475 | INFO | --------------------
+2024-09-03 18:43:57,475 | INFO | Report HTTP Server v2 init...
+2024-09-03 18:43:57,475 | INFO | read_db() finished. Loaded DB_FILE {}
+2024-09-03 18:43:57,480 | INFO | [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:44516
+ * Running on http://192.168.0.2:44516
+2024-09-03 18:43:57,480 | INFO | [33mPress CTRL+C to quit[0m
+2024-09-03 18:44:00,489 | INFO | read_db() finished. Loaded DB_FILE {}
+2024-09-03 18:44:01,989 | INFO | read_db() finished. Loaded DB_FILE {}
+2024-09-03 18:44:11,014 | INFO | read_db() finished. Loaded DB_FILE {}
+2024-09-03 18:44:11,901 | INFO | Attempt to login from 335678020:danil24v with @00001902 kurwabobr
+2024-09-03 18:44:11,902 | INFO | DB: key for user 335678020 : danil24v created.
+2024-09-03 18:44:11,902 | INFO | DB: user 335678020 subscribed to 00001902 restaurant.
+2024-09-03 18:44:11,902 | INFO | dump_db() called. arg: {335678020: {'name': 'danil24v', 'rest_id': '00001902', 'rest_name': 'Beerhouse'}}
+2024-09-03 18:44:11,902 | INFO | dump_db() finished. DB dumped.
+2024-09-03 18:44:12,607 | INFO | read_db() finished. Loaded DB_FILE {'335678020': {'name': 'danil24v', 'rest_id': '00001902', 'rest_name': 'Beerhouse'}}
+2024-09-03 18:44:12,613 | ERROR | Infinity polling exception: 'in <string>' requires string as left operand, not int
+2024-09-03 18:44:12,614 | ERROR | Exception traceback:
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/telebot/__init__.py", line 1101, in infinity_polling
+    self.polling(non_stop=True, timeout=timeout, long_polling_timeout=long_polling_timeout,
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/telebot/__init__.py", line 1189, in polling
+    self.__threaded_polling(non_stop=non_stop, interval=interval, timeout=timeout, long_polling_timeout=long_polling_timeout,
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/telebot/__init__.py", line 1264, in __threaded_polling
+    raise e
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/telebot/__init__.py", line 1226, in __threaded_polling
+    self.worker_pool.raise_exceptions()
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/telebot/util.py", line 150, in raise_exceptions
+    raise self.exception_info
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/telebot/util.py", line 93, in run
+    task(*args, **kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/telebot/__init__.py", line 8822, in _run_middlewares_and_handler
+    result = handler['function'](message)
+  File "/Users/mac/Documents/Progamming/Python/ReportClient2/server.py", line 194, in get_text_message
+    resp = get_current_user_state(chat_id=message.from_user.id)
+  File "/Users/mac/Documents/Progamming/Python/ReportClient2/server.py", line 166, in get_current_user_state
+    if key in chat_id:
+TypeError: 'in <string>' requires string as left operand, not int
+
+2024-09-03 18:44:22,152 | ERROR | Infinity polling: polling exited
+2024-09-03 18:44:22,153 | ERROR | Break infinity polling
+2024-09-03 18:45:14,231 | INFO | read_config() called
+2024-09-03 18:45:14,231 | INFO | read_config() finished. Loaded config {'port': 44516, 'bot_token': '7511480796:AAEeKgmNyoqpxL8ulxo7HAcsbYuoWNF-o0s', 'restaurants': [{'rest_name': 'Beerhouse', 'rest_id': '00001902', 'rest_pass': 'kurwabobr'}, {'rest_name': 'Beerhouse2', 'rest_id': '00001803', 'rest_pass': 'passabcd'}]}
+2024-09-03 18:45:14,232 | INFO | --------------------
+2024-09-03 18:45:14,232 | INFO | Report HTTP Server v2 init...
+2024-09-03 18:45:14,232 | INFO | read_db() finished. Loaded DB_FILE {'335678020': {'name': 'danil24v', 'rest_id': '00001902', 'rest_name': 'Beerhouse'}}
+2024-09-03 18:45:14,236 | INFO | [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:44516
+ * Running on http://192.168.0.2:44516
+2024-09-03 18:45:14,236 | INFO | [33mPress CTRL+C to quit[0m
+2024-09-03 18:45:23,300 | ERROR | Infinity polling: polling exited
+2024-09-03 18:45:23,300 | ERROR | Break infinity polling
+2024-09-03 18:45:24,431 | INFO | read_config() called
+2024-09-03 18:45:24,431 | INFO | read_config() finished. Loaded config {'port': 44516, 'bot_token': '7511480796:AAEeKgmNyoqpxL8ulxo7HAcsbYuoWNF-o0s', 'restaurants': [{'rest_name': 'Beerhouse', 'rest_id': '00001902', 'rest_pass': 'kurwabobr'}, {'rest_name': 'Beerhouse2', 'rest_id': '00001803', 'rest_pass': 'passabcd'}]}
+2024-09-03 18:45:24,432 | INFO | --------------------
+2024-09-03 18:45:24,432 | INFO | Report HTTP Server v2 init...
+2024-09-03 18:45:24,432 | INFO | read_db() finished. Loaded DB_FILE {}
+2024-09-03 18:45:24,434 | INFO | [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:44516
+ * Running on http://192.168.0.2:44516
+2024-09-03 18:45:24,435 | INFO | [33mPress CTRL+C to quit[0m
+2024-09-03 18:45:26,228 | ERROR | Infinity polling exception: get_current_user_state() got an unexpected keyword argument 'chat_id'
+2024-09-03 18:45:26,229 | ERROR | Exception traceback:
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/telebot/__init__.py", line 1101, in infinity_polling
+    self.polling(non_stop=True, timeout=timeout, long_polling_timeout=long_polling_timeout,
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/telebot/__init__.py", line 1189, in polling
+    self.__threaded_polling(non_stop=non_stop, interval=interval, timeout=timeout, long_polling_timeout=long_polling_timeout,
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/telebot/__init__.py", line 1264, in __threaded_polling
+    raise e
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/telebot/__init__.py", line 1226, in __threaded_polling
+    self.worker_pool.raise_exceptions()
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/telebot/util.py", line 150, in raise_exceptions
+    raise self.exception_info
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/telebot/util.py", line 93, in run
+    task(*args, **kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/telebot/__init__.py", line 8822, in _run_middlewares_and_handler
+    result = handler['function'](message)
+  File "/Users/mac/Documents/Progamming/Python/ReportClient2/server.py", line 193, in get_text_message
+    resp = get_current_user_state(chat_id=message.from_user.id)
+TypeError: get_current_user_state() got an unexpected keyword argument 'chat_id'
+
+2024-09-03 18:45:39,953 | ERROR | Infinity polling: polling exited
+2024-09-03 18:45:39,954 | ERROR | Break infinity polling
+2024-09-03 18:45:47,785 | INFO | read_config() called
+2024-09-03 18:45:47,785 | INFO | read_config() finished. Loaded config {'port': 44516, 'bot_token': '7511480796:AAEeKgmNyoqpxL8ulxo7HAcsbYuoWNF-o0s', 'restaurants': [{'rest_name': 'Beerhouse', 'rest_id': '00001902', 'rest_pass': 'kurwabobr'}, {'rest_name': 'Beerhouse2', 'rest_id': '00001803', 'rest_pass': 'passabcd'}]}
+2024-09-03 18:45:47,786 | INFO | --------------------
+2024-09-03 18:45:47,786 | INFO | Report HTTP Server v2 init...
+2024-09-03 18:45:47,786 | INFO | read_db() finished. Loaded DB_FILE {}
+2024-09-03 18:45:47,790 | INFO | [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:44516
+ * Running on http://192.168.0.2:44516
+2024-09-03 18:45:47,790 | INFO | [33mPress CTRL+C to quit[0m
+2024-09-03 18:45:51,908 | INFO | read_db() finished. Loaded DB_FILE {}
+2024-09-03 18:46:11,584 | INFO | Attempt to login from 335678020:danil24v with @00001902 kurwabobr
+2024-09-03 18:46:11,586 | INFO | DB: key for user 335678020 : danil24v created.
+2024-09-03 18:46:11,586 | INFO | DB: user 335678020 subscribed to 00001902 restaurant.
+2024-09-03 18:46:11,586 | INFO | dump_db() called. arg: {335678020: {'name': 'danil24v', 'rest_id': '00001902', 'rest_name': 'Beerhouse'}}
+2024-09-03 18:46:11,588 | INFO | dump_db() finished. DB dumped.
+2024-09-03 18:46:12,399 | INFO | read_db() finished. Loaded DB_FILE {'335678020': {'name': 'danil24v', 'rest_id': '00001902', 'rest_name': 'Beerhouse'}}
+2024-09-03 18:46:12,404 | ERROR | Infinity polling exception: 'in <string>' requires string as left operand, not int
+2024-09-03 18:46:12,405 | ERROR | Exception traceback:
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/telebot/__init__.py", line 1101, in infinity_polling
+    self.polling(non_stop=True, timeout=timeout, long_polling_timeout=long_polling_timeout,
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/telebot/__init__.py", line 1189, in polling
+    self.__threaded_polling(non_stop=non_stop, interval=interval, timeout=timeout, long_polling_timeout=long_polling_timeout,
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/telebot/__init__.py", line 1264, in __threaded_polling
+    raise e
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/telebot/__init__.py", line 1226, in __threaded_polling
+    self.worker_pool.raise_exceptions()
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/telebot/util.py", line 150, in raise_exceptions
+    raise self.exception_info
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/telebot/util.py", line 93, in run
+    task(*args, **kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/telebot/__init__.py", line 8822, in _run_middlewares_and_handler
+    result = handler['function'](message)
+  File "/Users/mac/Documents/Progamming/Python/ReportClient2/server.py", line 193, in get_text_message
+    resp = get_current_user_state(str(message.from_user.id))
+  File "/Users/mac/Documents/Progamming/Python/ReportClient2/server.py", line 165, in get_current_user_state
+    if key in str(chat):
+TypeError: 'in <string>' requires string as left operand, not int
+
+2024-09-03 18:47:38,574 | ERROR | Infinity polling: polling exited
+2024-09-03 18:47:38,574 | ERROR | Break infinity polling
+2024-09-03 18:48:17,560 | INFO | read_config() called
+2024-09-03 18:48:17,561 | INFO | read_config() finished. Loaded config {'port': 44516, 'bot_token': '7511480796:AAEeKgmNyoqpxL8ulxo7HAcsbYuoWNF-o0s', 'restaurants': [{'rest_name': 'Beerhouse', 'rest_id': '00001902', 'rest_pass': 'kurwabobr'}, {'rest_name': 'Beerhouse2', 'rest_id': '00001803', 'rest_pass': 'passabcd'}]}
+2024-09-03 18:48:17,561 | INFO | --------------------
+2024-09-03 18:48:17,561 | INFO | Report HTTP Server v2 init...
+2024-09-03 18:48:17,561 | INFO | read_db() finished. Loaded DB_FILE {}
+2024-09-03 18:48:17,766 | INFO | [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:44516
+ * Running on http://192.168.0.2:44516
+2024-09-03 18:48:17,766 | INFO | [33mPress CTRL+C to quit[0m
+2024-09-03 18:48:20,566 | INFO | read_db() finished. Loaded DB_FILE {}
+2024-09-03 18:48:24,566 | ERROR | Infinity polling exception: can only concatenate str (not "int") to str
+2024-09-03 18:48:24,567 | ERROR | Exception traceback:
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/telebot/__init__.py", line 1101, in infinity_polling
+    self.polling(non_stop=True, timeout=timeout, long_polling_timeout=long_polling_timeout,
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/telebot/__init__.py", line 1189, in polling
+    self.__threaded_polling(non_stop=non_stop, interval=interval, timeout=timeout, long_polling_timeout=long_polling_timeout,
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/telebot/__init__.py", line 1264, in __threaded_polling
+    raise e
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/telebot/__init__.py", line 1226, in __threaded_polling
+    self.worker_pool.raise_exceptions()
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/telebot/util.py", line 150, in raise_exceptions
+    raise self.exception_info
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/telebot/util.py", line 93, in run
+    task(*args, **kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/telebot/__init__.py", line 8822, in _run_middlewares_and_handler
+    result = handler['function'](message)
+  File "/Users/mac/Documents/Progamming/Python/ReportClient2/server.py", line 186, in get_text_message
+    resp = try_login(message)
+  File "/Users/mac/Documents/Progamming/Python/ReportClient2/server.py", line 131, in try_login
+    user_id = "u" + message.from_user.id
+TypeError: can only concatenate str (not "int") to str
+
+2024-09-03 18:48:42,705 | ERROR | Infinity polling: polling exited
+2024-09-03 18:48:42,705 | ERROR | Break infinity polling
+2024-09-03 18:48:44,000 | INFO | read_config() called
+2024-09-03 18:48:44,000 | INFO | read_config() finished. Loaded config {'port': 44516, 'bot_token': '7511480796:AAEeKgmNyoqpxL8ulxo7HAcsbYuoWNF-o0s', 'restaurants': [{'rest_name': 'Beerhouse', 'rest_id': '00001902', 'rest_pass': 'kurwabobr'}, {'rest_name': 'Beerhouse2', 'rest_id': '00001803', 'rest_pass': 'passabcd'}]}
+2024-09-03 18:48:44,001 | INFO | --------------------
+2024-09-03 18:48:44,001 | INFO | Report HTTP Server v2 init...
+2024-09-03 18:48:44,001 | INFO | read_db() finished. Loaded DB_FILE {}
+2024-09-03 18:48:44,005 | INFO | [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:44516
+ * Running on http://192.168.0.2:44516
+2024-09-03 18:48:44,005 | INFO | [33mPress CTRL+C to quit[0m
+2024-09-03 18:48:51,675 | INFO | Attempt to login from u335678020:danil24v with @00001902 kurwabobr
+2024-09-03 18:48:51,676 | INFO | DB: key for user u335678020 : danil24v created.
+2024-09-03 18:48:51,676 | INFO | DB: user u335678020 subscribed to 00001902 restaurant.
+2024-09-03 18:48:51,676 | INFO | dump_db() called. arg: {'u335678020': {'name': 'danil24v', 'rest_id': '00001902', 'rest_name': 'Beerhouse'}}
+2024-09-03 18:48:51,678 | INFO | dump_db() finished. DB dumped.
+2024-09-03 18:48:53,220 | INFO | read_db() finished. Loaded DB_FILE {'u335678020': {'name': 'danil24v', 'rest_id': '00001902', 'rest_name': 'Beerhouse'}}
+2024-09-03 18:48:57,256 | ERROR | Infinity polling: polling exited
+2024-09-03 18:48:57,256 | ERROR | Break infinity polling
+2024-09-03 18:49:29,853 | INFO | read_config() called
+2024-09-03 18:49:29,854 | INFO | read_config() finished. Loaded config {'port': 44516, 'bot_token': '7511480796:AAEeKgmNyoqpxL8ulxo7HAcsbYuoWNF-o0s', 'restaurants': [{'rest_name': 'Beerhouse', 'rest_id': '00001902', 'rest_pass': 'kurwabobr'}, {'rest_name': 'Beerhouse2', 'rest_id': '00001803', 'rest_pass': 'passabcd'}]}
+2024-09-03 18:49:29,854 | INFO | --------------------
+2024-09-03 18:49:29,854 | INFO | Report HTTP Server v2 init...
+2024-09-03 18:49:29,854 | INFO | read_db() finished. Loaded DB_FILE {'u335678020': {'name': 'danil24v', 'rest_id': '00001902', 'rest_name': 'Beerhouse'}}
+2024-09-03 18:49:29,860 | INFO | [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:44516
+ * Running on http://192.168.0.2:44516
+2024-09-03 18:49:29,861 | INFO | [33mPress CTRL+C to quit[0m
+2024-09-03 18:49:32,672 | ERROR | Infinity polling: polling exited
+2024-09-03 18:49:32,673 | ERROR | Break infinity polling
+2024-09-03 18:49:41,404 | INFO | read_config() called
+2024-09-03 18:49:41,405 | INFO | read_config() finished. Loaded config {'port': 44516, 'bot_token': '7511480796:AAEeKgmNyoqpxL8ulxo7HAcsbYuoWNF-o0s', 'restaurants': [{'rest_name': 'Beerhouse', 'rest_id': '00001902', 'rest_pass': 'kurwabobr'}, {'rest_name': 'Beerhouse2', 'rest_id': '00001803', 'rest_pass': 'passabcd'}]}
+2024-09-03 18:49:41,405 | INFO | --------------------
+2024-09-03 18:49:41,405 | INFO | Report HTTP Server v2 init...
+2024-09-03 18:49:41,405 | INFO | read_db() finished. Loaded DB_FILE {}
+2024-09-03 18:49:41,409 | INFO | [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:44516
+ * Running on http://192.168.0.2:44516
+2024-09-03 18:49:41,409 | INFO | [33mPress CTRL+C to quit[0m
+2024-09-03 18:49:50,331 | INFO | Attempt to login from u335678020:danil24v with @00001902 kurwabobr
+2024-09-03 18:49:50,331 | INFO | DB: key for user u335678020 : danil24v created.
+2024-09-03 18:49:50,332 | INFO | DB: user u335678020 subscribed to 00001902 restaurant.
+2024-09-03 18:49:50,332 | INFO | dump_db() called. arg: {'u335678020': {'name': 'danil24v', 'rest_id': '00001902', 'rest_name': 'Beerhouse'}}
+2024-09-03 18:49:50,333 | INFO | dump_db() finished. DB dumped.
+2024-09-03 18:50:22,758 | INFO | Attempt to login from u295602428:zubkoff_a with @00001902 kurwabobr
+2024-09-03 18:50:22,758 | INFO | DB: key for user u295602428 : zubkoff_a created.
+2024-09-03 18:50:22,759 | INFO | DB: user u295602428 subscribed to 00001902 restaurant.
+2024-09-03 18:50:22,759 | INFO | dump_db() called. arg: {'u335678020': {'name': 'danil24v', 'rest_id': '00001902', 'rest_name': 'Beerhouse'}, 'u295602428': {'name': 'zubkoff_a', 'rest_id': '00001902', 'rest_name': 'Beerhouse'}}
+2024-09-03 18:50:22,762 | INFO | dump_db() finished. DB dumped.
+2024-09-03 18:50:35,976 | ERROR | Infinity polling: polling exited
+2024-09-03 18:50:35,977 | ERROR | Break infinity polling
