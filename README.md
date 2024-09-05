@@ -16,6 +16,27 @@ pyinstaller main.py --onefile
 - БД сервера - users.json
 - Порядок установки сервера и запуска сервера:
 ```bash
+
+# настройка конфига сервера
+
+server.json - файл конфигурации ресторанов
+{
+   "port":  44516, порт бота на сервере
+   "bot_token": "xxx", Telegram токен бота
+   "restaurants": [
+      {
+         "rest_name": "Resto1",
+         "rest_id": "0000001",  Должно совпадать c id в отправлялке
+         "rest_pass": "kurwabobr1" пароль для логина, логинится через @id пароль
+      },
+      {
+         "rest_name": "Resto2",
+         "rest_id": "0000002",
+         "rest_pass": "kurwabobr2"
+      },
+   ]
+}
+
 python -m pip install pyTelegramBotAPI
 python -m pip intall Flask
 python server.py

@@ -3,12 +3,12 @@
    "default_addr":"http://2.57.36.136:44516",
    "restaurant_id": "00001902",
    "sleep_parse_sec":120,
-   "sleep_send_sec":10,
-   "printer_dir":"/Users/mac/Downloads/Printers",
+   "sleep_send_sec":30,
+   "printer_dir":"/Users/mac/Documents/Progamming/Python/ReportClient2/Printer",
    "include_markers": false,
    "markers": [
       [
-         "Бирхаус Пушк сменный отчет",
+         "Бирхаус Пушк Проверка связи",
          "#начало-отчета-0",
          "#конец-отчета-0"
       ],
